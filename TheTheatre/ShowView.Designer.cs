@@ -40,6 +40,10 @@
             label7 = new Label();
             Close = new Button();
             view_hall = new Button();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
             SuspendLayout();
             // 
             // w_name
@@ -78,15 +82,15 @@
             label3.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label3.Location = new Point(26, 75);
             label3.Name = "label3";
-            label3.Size = new Size(116, 19);
+            label3.Size = new Size(175, 19);
             label3.TabIndex = 5;
-            label3.Text = "Дата и время:";
+            label3.Text = "Продолжительность:";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(26, 115);
+            label5.Location = new Point(26, 124);
             label5.Name = "label5";
             label5.Size = new Size(92, 19);
             label5.TabIndex = 7;
@@ -94,7 +98,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(217, 115);
+            textBox2.Location = new Point(217, 124);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(667, 76);
@@ -102,7 +106,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(217, 211);
+            textBox1.Location = new Point(217, 220);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(667, 98);
@@ -112,7 +116,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(26, 211);
+            label4.Location = new Point(26, 220);
             label4.Name = "label4";
             label4.Size = new Size(172, 19);
             label4.TabIndex = 10;
@@ -122,7 +126,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(26, 328);
+            label6.Location = new Point(26, 340);
             label6.Name = "label6";
             label6.Size = new Size(42, 19);
             label6.TabIndex = 12;
@@ -132,7 +136,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(217, 328);
+            label7.Location = new Point(217, 340);
             label7.Name = "label7";
             label7.Size = new Size(51, 19);
             label7.TabIndex = 13;
@@ -162,6 +166,47 @@
             view_hall.TabIndex = 15;
             view_hall.Text = "Посмотреть зал";
             view_hall.UseVisualStyleBackColor = false;
+            view_hall.Click += view_hall_Click;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(666, 33);
+            label8.Name = "label8";
+            label8.Size = new Size(51, 19);
+            label8.TabIndex = 17;
+            label8.Text = "label8";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.Location = new Point(413, 33);
+            label9.Name = "label9";
+            label9.Size = new Size(224, 19);
+            label9.TabIndex = 16;
+            label9.Text = "Минимальная цена билета:";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.Location = new Point(666, 75);
+            label10.Name = "label10";
+            label10.Size = new Size(60, 19);
+            label10.TabIndex = 19;
+            label10.Text = "label10";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.Location = new Point(413, 75);
+            label11.Name = "label11";
+            label11.Size = new Size(230, 19);
+            label11.TabIndex = 18;
+            label11.Text = "Максимальная цена билета:";
             // 
             // ShowView
             // 
@@ -169,6 +214,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(907, 428);
+            Controls.Add(label10);
+            Controls.Add(label11);
+            Controls.Add(label8);
+            Controls.Add(label9);
             Controls.Add(view_hall);
             Controls.Add(Close);
             Controls.Add(label7);
@@ -203,5 +252,9 @@
         private Label label7;
         private Button Close;
         private Button view_hall;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private Label label11;
     }
 }

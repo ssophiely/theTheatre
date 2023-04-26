@@ -33,7 +33,7 @@ namespace TheTheatre
 
         private void People_Load(object sender, EventArgs e)
         {
-            table.RowTemplate.MinimumHeight = 50;
+            table.RowTemplate.MinimumHeight = 35;
             table.Rows.Add("Работник");
             table.Rows.Add("Работник");
             table.Rows.Add("Работник");

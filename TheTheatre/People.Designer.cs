@@ -32,13 +32,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle15 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle16 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle12 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle13 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle14 = new DataGridViewCellStyle();
             table = new DataGridView();
             Name_ = new DataGridViewTextBoxColumn();
             See = new DataGridViewButtonColumn();
@@ -69,51 +70,54 @@
             table.AllowUserToOrderColumns = true;
             table.AllowUserToResizeColumns = false;
             table.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
+            table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             table.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             table.BackgroundColor = Color.White;
             table.BorderStyle = BorderStyle.None;
             table.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = SystemColors.Control;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = SystemColors.Control;
+            dataGridViewCellStyle10.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle10.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = DataGridViewTriState.True;
+            table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             table.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             table.ColumnHeadersVisible = false;
             table.Columns.AddRange(new DataGridViewColumn[] { Name_, See, Edit, Del });
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = SystemColors.Window;
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
-            table.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle15.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = SystemColors.Window;
+            dataGridViewCellStyle15.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle15.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle15.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = DataGridViewTriState.True;
+            table.DefaultCellStyle = dataGridViewCellStyle15;
             table.Dock = DockStyle.Top;
             table.Location = new Point(0, 0);
             table.Name = "table";
             table.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             table.RowHeadersVisible = false;
             table.RowHeadersWidth = 70;
-            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
-            table.RowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle16.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle16.WrapMode = DataGridViewTriState.True;
+            table.RowsDefaultCellStyle = dataGridViewCellStyle16;
             table.RowTemplate.Height = 29;
             table.ShowCellToolTips = false;
-            table.Size = new Size(991, 251);
+            table.Size = new Size(991, 176);
             table.TabIndex = 10;
             table.CellContentClick += table_CellContentClick;
             // 
             // Name_
             // 
             Name_.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle11.SelectionBackColor = Color.White;
+            dataGridViewCellStyle11.SelectionForeColor = Color.Black;
+            Name_.DefaultCellStyle = dataGridViewCellStyle11;
             Name_.FillWeight = 320F;
             Name_.HeaderText = "Название";
             Name_.MinimumWidth = 6;
@@ -123,11 +127,11 @@
             // See
             // 
             See.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = Color.LightYellow;
-            dataGridViewCellStyle3.SelectionBackColor = Color.LightYellow;
-            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
-            See.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = Color.LightYellow;
+            dataGridViewCellStyle12.SelectionBackColor = Color.LightYellow;
+            dataGridViewCellStyle12.SelectionForeColor = Color.Black;
+            See.DefaultCellStyle = dataGridViewCellStyle12;
             See.FillWeight = 80F;
             See.FlatStyle = FlatStyle.Popup;
             See.HeaderText = "Подробнее";
@@ -140,11 +144,11 @@
             // Edit
             // 
             Edit.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = Color.Lavender;
-            dataGridViewCellStyle4.SelectionBackColor = Color.Lavender;
-            dataGridViewCellStyle4.SelectionForeColor = Color.Black;
-            Edit.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle13.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = Color.Lavender;
+            dataGridViewCellStyle13.SelectionBackColor = Color.Lavender;
+            dataGridViewCellStyle13.SelectionForeColor = Color.Black;
+            Edit.DefaultCellStyle = dataGridViewCellStyle13;
             Edit.FillWeight = 80F;
             Edit.FlatStyle = FlatStyle.Popup;
             Edit.HeaderText = "Редактировать";
@@ -157,11 +161,11 @@
             // Del
             // 
             Del.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = Color.Plum;
-            dataGridViewCellStyle5.SelectionBackColor = Color.Plum;
-            dataGridViewCellStyle5.SelectionForeColor = Color.Black;
-            Del.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle14.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = Color.Plum;
+            dataGridViewCellStyle14.SelectionBackColor = Color.Plum;
+            dataGridViewCellStyle14.SelectionForeColor = Color.Black;
+            Del.DefaultCellStyle = dataGridViewCellStyle14;
             Del.FillWeight = 70F;
             Del.FlatStyle = FlatStyle.Popup;
             Del.HeaderText = "Удалить";
@@ -184,7 +188,7 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label1);
             groupBox1.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            groupBox1.Location = new Point(12, 283);
+            groupBox1.Location = new Point(12, 205);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(967, 253);
             groupBox1.TabIndex = 11;
@@ -279,7 +283,7 @@
             Close.BackColor = Color.Black;
             Close.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Close.ForeColor = Color.White;
-            Close.Location = new Point(843, 555);
+            Close.Location = new Point(843, 480);
             Close.Name = "Close";
             Close.Size = new Size(136, 36);
             Close.TabIndex = 3;
@@ -292,7 +296,7 @@
             button1.BackColor = Color.Gray;
             button1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(701, 555);
+            button1.Location = new Point(701, 480);
             button1.Name = "button1";
             button1.Size = new Size(136, 36);
             button1.TabIndex = 4;
@@ -305,7 +309,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(991, 596);
+            ClientSize = new Size(991, 530);
             Controls.Add(groupBox1);
             Controls.Add(table);
             Controls.Add(button1);

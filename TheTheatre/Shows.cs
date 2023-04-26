@@ -34,7 +34,7 @@ namespace TheTheatre
         private void Shows_Load(object sender, EventArgs e)
         {
             //this.table.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-            table.RowTemplate.MinimumHeight = 50;
+            table.RowTemplate.MinimumHeight = 35;
             table.Rows.Add("Спеееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееектакль");
             table.Rows.Add("Спектакль");
             table.Rows.Add("Спектакль");
