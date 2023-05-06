@@ -135,6 +135,7 @@
             Close.TabIndex = 18;
             Close.Text = "Изменить";
             Close.UseVisualStyleBackColor = false;
+            Close.Click += Close_Click;
             // 
             // numericUpDown4
             // 

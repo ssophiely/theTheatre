@@ -1,3 +1,4 @@
+using Microsoft.VisualBasic.ApplicationServices;
 using System.Runtime.InteropServices;
 
 namespace TheTheatre
@@ -33,12 +34,15 @@ namespace TheTheatre
 
         private void Main_Load(object sender, EventArgs e)
         {
+            using (ThetheatreContext db = new ThetheatreContext())
+            {
+
+            }
         }
 
         private void Main_Shown(object sender, EventArgs e)
         {
-            MessageBox(0, "Лакеева Софья, 21ВП2\nИС \"Театр\", вариант 5",
-                "Информация об авторе", 0);
+            new Info().ShowDialog();
         }
     }
 }

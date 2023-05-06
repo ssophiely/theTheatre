@@ -105,9 +105,9 @@
             label5.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label5.Location = new Point(26, 173);
             label5.Name = "label5";
-            label5.Size = new Size(101, 19);
+            label5.Size = new Size(157, 19);
             label5.TabIndex = 7;
-            label5.Text = "Спектакли:";
+            label5.Text = "Спектакли и роли:";
             // 
             // textBox1
             // 

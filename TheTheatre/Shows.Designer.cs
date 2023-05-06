@@ -40,37 +40,52 @@
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle13 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle14 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle12 = new DataGridViewCellStyle();
             Close = new Button();
             Back = new Button();
             table = new DataGridView();
+            Name_ = new DataGridViewTextBoxColumn();
+            See = new DataGridViewButtonColumn();
+            Edit = new DataGridViewButtonColumn();
+            Del = new DataGridViewButtonColumn();
             groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
+            participants_t = new DataGridView();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            dataGridViewButtonColumn3 = new DataGridViewButtonColumn();
+            listBox1 = new ListBox();
+            button2 = new Button();
+            label11 = new Label();
+            textBox3 = new TextBox();
+            label5 = new Label();
             numericUpDown4 = new NumericUpDown();
             numericUpDown3 = new NumericUpDown();
             label9 = new Label();
             label3 = new Label();
             label8 = new Label();
+            add = new Button();
             numericUpDown2 = new NumericUpDown();
             label7 = new Label();
             numericUpDown1 = new NumericUpDown();
             label4 = new Label();
-            add = new Button();
-            checkedListBox1 = new CheckedListBox();
             comboBox1 = new ComboBox();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
             label6 = new Label();
-            label5 = new Label();
             label2 = new Label();
             label1 = new Label();
             button1 = new Button();
             label10 = new Label();
             comboBox2 = new ComboBox();
-            Name_ = new DataGridViewTextBoxColumn();
-            See = new DataGridViewButtonColumn();
-            Edit = new DataGridViewButtonColumn();
-            Del = new DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)table).BeginInit();
             groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)participants_t).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
@@ -82,7 +97,7 @@
             Close.BackColor = Color.Black;
             Close.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Close.ForeColor = Color.White;
-            Close.Location = new Point(843, 555);
+            Close.Location = new Point(843, 683);
             Close.Name = "Close";
             Close.Size = new Size(136, 36);
             Close.TabIndex = 3;
@@ -95,7 +110,7 @@
             Back.BackColor = Color.Gray;
             Back.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Back.ForeColor = Color.White;
-            Back.Location = new Point(701, 555);
+            Back.Location = new Point(701, 683);
             Back.Name = "Back";
             Back.Size = new Size(136, 36);
             Back.TabIndex = 5;
@@ -152,224 +167,6 @@
             table.Size = new Size(991, 176);
             table.TabIndex = 7;
             table.CellContentClick += table_CellContentClick;
-            // 
-            // groupBox1
-            // 
-            groupBox1.BackColor = Color.FromArgb(248, 244, 255);
-            groupBox1.Controls.Add(numericUpDown4);
-            groupBox1.Controls.Add(numericUpDown3);
-            groupBox1.Controls.Add(label9);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(label8);
-            groupBox1.Controls.Add(numericUpDown2);
-            groupBox1.Controls.Add(label7);
-            groupBox1.Controls.Add(numericUpDown1);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(add);
-            groupBox1.Controls.Add(checkedListBox1);
-            groupBox1.Controls.Add(comboBox1);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            groupBox1.Location = new Point(12, 267);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(967, 282);
-            groupBox1.TabIndex = 8;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Добавить спектакль";
-            // 
-            // numericUpDown4
-            // 
-            numericUpDown4.Location = new Point(218, 176);
-            numericUpDown4.Name = "numericUpDown4";
-            numericUpDown4.Size = new Size(222, 27);
-            numericUpDown4.TabIndex = 19;
-            // 
-            // numericUpDown3
-            // 
-            numericUpDown3.Location = new Point(217, 127);
-            numericUpDown3.Name = "numericUpDown3";
-            numericUpDown3.Size = new Size(222, 27);
-            numericUpDown3.TabIndex = 18;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(6, 178);
-            label9.Name = "label9";
-            label9.Size = new Size(203, 19);
-            label9.TabIndex = 17;
-            label9.Text = "Максимальная цена билета:";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(6, 129);
-            label3.Name = "label3";
-            label3.Size = new Size(196, 19);
-            label3.TabIndex = 16;
-            label3.Text = "Минимальная цена билета:";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(404, 87);
-            label8.Name = "label8";
-            label8.Size = new Size(36, 19);
-            label8.TabIndex = 15;
-            label8.Text = "мин";
-            // 
-            // numericUpDown2
-            // 
-            numericUpDown2.Location = new Point(323, 79);
-            numericUpDown2.Name = "numericUpDown2";
-            numericUpDown2.Size = new Size(75, 27);
-            numericUpDown2.TabIndex = 14;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(298, 87);
-            label7.Name = "label7";
-            label7.Size = new Size(18, 19);
-            label7.TabIndex = 13;
-            label7.Text = "ч";
-            // 
-            // numericUpDown1
-            // 
-            numericUpDown1.Location = new Point(217, 79);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(75, 27);
-            numericUpDown1.TabIndex = 12;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(6, 81);
-            label4.Name = "label4";
-            label4.Size = new Size(159, 19);
-            label4.TabIndex = 11;
-            label4.Text = "Продолжительность:";
-            // 
-            // add
-            // 
-            add.BackColor = Color.Violet;
-            add.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            add.Location = new Point(825, 241);
-            add.Name = "add";
-            add.Size = new Size(136, 36);
-            add.TabIndex = 9;
-            add.Text = "Добавить";
-            add.UseVisualStyleBackColor = false;
-            // 
-            // checkedListBox1
-            // 
-            checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Location = new Point(591, 143);
-            checkedListBox1.MultiColumn = true;
-            checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(370, 92);
-            checkedListBox1.TabIndex = 10;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(218, 217);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(222, 27);
-            comboBox1.TabIndex = 9;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(591, 26);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(370, 98);
-            textBox2.TabIndex = 8;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(217, 31);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(222, 27);
-            textBox1.TabIndex = 6;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(6, 225);
-            label6.Name = "label6";
-            label6.Size = new Size(38, 19);
-            label6.TabIndex = 5;
-            label6.Text = "Зал:";
-            // 
-            // label5
-            // 
-            label5.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(478, 151);
-            label5.Name = "label5";
-            label5.Size = new Size(89, 46);
-            label5.TabIndex = 4;
-            label5.Text = "Участие принимали:";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(478, 26);
-            label2.Name = "label2";
-            label2.Size = new Size(81, 19);
-            label2.TabIndex = 1;
-            label2.Text = "Описание:";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(6, 34);
-            label1.Name = "label1";
-            label1.Size = new Size(79, 19);
-            label1.TabIndex = 0;
-            label1.Text = "Название:";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.Violet;
-            button1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(12, 198);
-            button1.Name = "button1";
-            button1.Size = new Size(136, 36);
-            button1.TabIndex = 20;
-            button1.Text = "Сортировать";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(170, 207);
-            label10.Name = "label10";
-            label10.Size = new Size(26, 19);
-            label10.TabIndex = 20;
-            label10.Text = "по";
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(230, 204);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(222, 28);
-            comboBox2.TabIndex = 20;
             // 
             // Name_
             // 
@@ -436,12 +233,354 @@
             Del.Text = "Удалить";
             Del.UseColumnTextForButtonValue = true;
             // 
+            // groupBox1
+            // 
+            groupBox1.BackColor = Color.FromArgb(248, 244, 255);
+            groupBox1.Controls.Add(groupBox2);
+            groupBox1.Controls.Add(numericUpDown4);
+            groupBox1.Controls.Add(numericUpDown3);
+            groupBox1.Controls.Add(label9);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(add);
+            groupBox1.Controls.Add(numericUpDown2);
+            groupBox1.Controls.Add(label7);
+            groupBox1.Controls.Add(numericUpDown1);
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(comboBox1);
+            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(label6);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            groupBox1.Location = new Point(12, 250);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(967, 427);
+            groupBox1.TabIndex = 8;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Добавить спектакль";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(participants_t);
+            groupBox2.Controls.Add(listBox1);
+            groupBox2.Controls.Add(button2);
+            groupBox2.Controls.Add(label11);
+            groupBox2.Controls.Add(textBox3);
+            groupBox2.Controls.Add(label5);
+            groupBox2.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            groupBox2.Location = new Point(6, 174);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(955, 207);
+            groupBox2.TabIndex = 26;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Добавить участника спектакля";
+            // 
+            // participants_t
+            // 
+            participants_t.AllowDrop = true;
+            participants_t.AllowUserToAddRows = false;
+            participants_t.AllowUserToDeleteRows = false;
+            participants_t.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
+            participants_t.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            participants_t.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            participants_t.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+            participants_t.BackgroundColor = Color.White;
+            participants_t.BorderStyle = BorderStyle.None;
+            participants_t.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = SystemColors.Control;
+            dataGridViewCellStyle10.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle10.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = DataGridViewTriState.True;
+            participants_t.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            participants_t.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            participants_t.ColumnHeadersVisible = false;
+            participants_t.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewButtonColumn3 });
+            dataGridViewCellStyle13.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = SystemColors.Window;
+            dataGridViewCellStyle13.Font = new Font("Times New Roman", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle13.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle13.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = DataGridViewTriState.True;
+            participants_t.DefaultCellStyle = dataGridViewCellStyle13;
+            participants_t.Location = new Point(471, 15);
+            participants_t.Name = "participants_t";
+            participants_t.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            participants_t.RowHeadersVisible = false;
+            participants_t.RowHeadersWidth = 70;
+            dataGridViewCellStyle14.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle14.WrapMode = DataGridViewTriState.True;
+            participants_t.RowsDefaultCellStyle = dataGridViewCellStyle14;
+            participants_t.RowTemplate.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+            participants_t.RowTemplate.Height = 50;
+            participants_t.ShowCellToolTips = false;
+            participants_t.Size = new Size(478, 186);
+            participants_t.TabIndex = 21;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle11.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.SelectionBackColor = Color.White;
+            dataGridViewCellStyle11.SelectionForeColor = Color.Black;
+            dataGridViewCellStyle11.WrapMode = DataGridViewTriState.True;
+            dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewTextBoxColumn1.FillWeight = 320F;
+            dataGridViewTextBoxColumn1.HeaderText = "Участник";
+            dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.SortMode = DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewButtonColumn3
+            // 
+            dataGridViewButtonColumn3.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = Color.Plum;
+            dataGridViewCellStyle12.SelectionBackColor = Color.Plum;
+            dataGridViewCellStyle12.SelectionForeColor = Color.Black;
+            dataGridViewButtonColumn3.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewButtonColumn3.FillWeight = 70F;
+            dataGridViewButtonColumn3.FlatStyle = FlatStyle.Popup;
+            dataGridViewButtonColumn3.HeaderText = "Удалить";
+            dataGridViewButtonColumn3.MinimumWidth = 6;
+            dataGridViewButtonColumn3.Name = "dataGridViewButtonColumn3";
+            dataGridViewButtonColumn3.Resizable = DataGridViewTriState.True;
+            dataGridViewButtonColumn3.Text = "Удалить";
+            dataGridViewButtonColumn3.UseColumnTextForButtonValue = true;
+            // 
+            // listBox1
+            // 
+            listBox1.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 17;
+            listBox1.Items.AddRange(new object[] { "один", "два", "триииииииииииииииииииииииииииииии" });
+            listBox1.Location = new Point(6, 50);
+            listBox1.Name = "listBox1";
+            listBox1.ScrollAlwaysVisible = true;
+            listBox1.Size = new Size(448, 72);
+            listBox1.TabIndex = 21;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Violet;
+            button2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.Location = new Point(318, 165);
+            button2.Name = "button2";
+            button2.Size = new Size(136, 36);
+            button2.TabIndex = 25;
+            button2.Text = "Добавить";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Location = new Point(6, 30);
+            label11.Name = "label11";
+            label11.Size = new Size(77, 17);
+            label11.TabIndex = 22;
+            label11.Text = "Сотрудник:";
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(70, 131);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(384, 25);
+            textBox3.TabIndex = 24;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(6, 139);
+            label5.Name = "label5";
+            label5.Size = new Size(41, 17);
+            label5.TabIndex = 23;
+            label5.Text = "Роль:";
+            // 
+            // numericUpDown4
+            // 
+            numericUpDown4.Location = new Point(854, 73);
+            numericUpDown4.Name = "numericUpDown4";
+            numericUpDown4.Size = new Size(107, 27);
+            numericUpDown4.TabIndex = 19;
+            // 
+            // numericUpDown3
+            // 
+            numericUpDown3.Location = new Point(606, 73);
+            numericUpDown3.Name = "numericUpDown3";
+            numericUpDown3.Size = new Size(107, 27);
+            numericUpDown3.TabIndex = 18;
+            // 
+            // label9
+            // 
+            label9.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Location = new Point(745, 70);
+            label9.Name = "label9";
+            label9.Size = new Size(103, 40);
+            label9.TabIndex = 17;
+            label9.Text = "Максимальная цена билета:";
+            // 
+            // label3
+            // 
+            label3.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(506, 73);
+            label3.Name = "label3";
+            label3.Size = new Size(94, 37);
+            label3.TabIndex = 16;
+            label3.Text = "Минимальная цена билета:";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(854, 37);
+            label8.Name = "label8";
+            label8.Size = new Size(32, 17);
+            label8.TabIndex = 15;
+            label8.Text = "мин";
+            // 
+            // add
+            // 
+            add.BackColor = Color.Violet;
+            add.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            add.Location = new Point(825, 385);
+            add.Name = "add";
+            add.Size = new Size(136, 36);
+            add.TabIndex = 9;
+            add.Text = "Создать";
+            add.UseVisualStyleBackColor = false;
+            // 
+            // numericUpDown2
+            // 
+            numericUpDown2.Location = new Point(773, 29);
+            numericUpDown2.Name = "numericUpDown2";
+            numericUpDown2.Size = new Size(75, 27);
+            numericUpDown2.TabIndex = 14;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(748, 37);
+            label7.Name = "label7";
+            label7.Size = new Size(16, 17);
+            label7.TabIndex = 13;
+            label7.Text = "ч";
+            // 
+            // numericUpDown1
+            // 
+            numericUpDown1.Location = new Point(660, 30);
+            numericUpDown1.Name = "numericUpDown1";
+            numericUpDown1.Size = new Size(75, 27);
+            numericUpDown1.TabIndex = 12;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(506, 33);
+            label4.Name = "label4";
+            label4.Size = new Size(138, 17);
+            label4.TabIndex = 11;
+            label4.Text = "Продолжительность:";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(606, 126);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(355, 27);
+            comboBox1.TabIndex = 9;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(120, 73);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(340, 77);
+            textBox2.TabIndex = 8;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(120, 33);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(340, 27);
+            textBox1.TabIndex = 6;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(506, 123);
+            label6.Name = "label6";
+            label6.Size = new Size(33, 17);
+            label6.TabIndex = 5;
+            label6.Text = "Зал:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(6, 84);
+            label2.Name = "label2";
+            label2.Size = new Size(71, 17);
+            label2.TabIndex = 1;
+            label2.Text = "Описание:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(6, 34);
+            label1.Name = "label1";
+            label1.Size = new Size(70, 17);
+            label1.TabIndex = 0;
+            label1.Text = "Название:";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Violet;
+            button1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(14, 186);
+            button1.Name = "button1";
+            button1.Size = new Size(202, 36);
+            button1.TabIndex = 20;
+            button1.Text = "Сортировать таблицу";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.Location = new Point(245, 195);
+            label10.Name = "label10";
+            label10.Size = new Size(26, 19);
+            label10.TabIndex = 20;
+            label10.Text = "по";
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(289, 191);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(222, 28);
+            comboBox2.TabIndex = 20;
+            // 
             // Shows
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(991, 596);
+            ClientSize = new Size(991, 731);
             Controls.Add(comboBox2);
             Controls.Add(label10);
             Controls.Add(button1);
@@ -456,6 +595,9 @@
             ((System.ComponentModel.ISupportInitialize)table).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)participants_t).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown4).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown3).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
@@ -471,13 +613,11 @@
         private DataGridView table;
         private GroupBox groupBox1;
         private Label label6;
-        private Label label5;
         private Label label2;
         private Label label1;
         private TextBox textBox1;
         private TextBox textBox2;
         private ComboBox comboBox1;
-        private CheckedListBox checkedListBox1;
         private Button add;
         private Label label4;
         private Label label8;
@@ -495,5 +635,14 @@
         private DataGridViewButtonColumn See;
         private DataGridViewButtonColumn Edit;
         private DataGridViewButtonColumn Del;
+        private ListBox listBox1;
+        private Label label11;
+        private TextBox textBox3;
+        private Label label5;
+        private GroupBox groupBox2;
+        private Button button2;
+        private DataGridView participants_t;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewButtonColumn dataGridViewButtonColumn3;
     }
 }

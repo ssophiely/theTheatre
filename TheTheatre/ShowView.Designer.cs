@@ -118,9 +118,9 @@
             label4.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label4.Location = new Point(26, 220);
             label4.Name = "label4";
-            label4.Size = new Size(172, 19);
+            label4.Size = new Size(130, 19);
             label4.TabIndex = 10;
-            label4.Text = "Участие принимали:";
+            label4.Text = "Актеры и роли:";
             // 
             // label6
             // 

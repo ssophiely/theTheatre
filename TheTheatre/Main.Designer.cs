@@ -36,10 +36,10 @@
             // Shows
             // 
             Shows.BackColor = Color.Violet;
-            Shows.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Shows.Location = new Point(313, 133);
+            Shows.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            Shows.Location = new Point(239, 92);
             Shows.Name = "Shows";
-            Shows.Size = new Size(175, 77);
+            Shows.Size = new Size(170, 82);
             Shows.TabIndex = 0;
             Shows.Text = "Спектакли";
             Shows.UseVisualStyleBackColor = false;
@@ -48,10 +48,10 @@
             // People
             // 
             People.BackColor = Color.FromArgb(253, 219, 109);
-            People.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            People.Location = new Point(313, 241);
+            People.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            People.Location = new Point(239, 186);
             People.Name = "People";
-            People.Size = new Size(175, 77);
+            People.Size = new Size(170, 82);
             People.TabIndex = 1;
             People.Text = "Люди театра";
             People.UseVisualStyleBackColor = false;
@@ -62,7 +62,7 @@
             Close.BackColor = Color.Black;
             Close.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Close.ForeColor = Color.White;
-            Close.Location = new Point(652, 402);
+            Close.Location = new Point(501, 312);
             Close.Name = "Close";
             Close.Size = new Size(136, 36);
             Close.TabIndex = 2;
@@ -75,7 +75,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(649, 360);
             Controls.Add(Close);
             Controls.Add(People);
             Controls.Add(Shows);

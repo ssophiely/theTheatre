@@ -41,6 +41,10 @@ namespace TheTheatre
             table.Rows.Add("Спектакль");
             table.Rows.Add("Спектакль");
             table[0, 0].Selected = false;
+
+            participants_t.RowTemplate.MinimumHeight = 35;
+            participants_t.Rows.Add("Участник1");
+            participants_t[0, 0].Selected = false;
         }
 
         private void table_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -62,5 +66,6 @@ namespace TheTheatre
                 // удалить
             }
         }
+
     }
 }

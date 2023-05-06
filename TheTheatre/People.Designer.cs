@@ -32,14 +32,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle15 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle16 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle12 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle13 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle14 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle17 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle18 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle23 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle24 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle19 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle20 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle21 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle22 = new DataGridViewCellStyle();
             table = new DataGridView();
             Name_ = new DataGridViewTextBoxColumn();
             See = new DataGridViewButtonColumn();
@@ -48,11 +48,9 @@
             groupBox1 = new GroupBox();
             numericUpDown1 = new NumericUpDown();
             add = new Button();
-            checkedListBox1 = new CheckedListBox();
             comboBox1 = new ComboBox();
             textBox1 = new TextBox();
             label6 = new Label();
-            label5 = new Label();
             label3 = new Label();
             label1 = new Label();
             Close = new Button();
@@ -70,42 +68,42 @@
             table.AllowUserToOrderColumns = true;
             table.AllowUserToResizeColumns = false;
             table.AllowUserToResizeRows = false;
-            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
-            table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle17.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.WrapMode = DataGridViewTriState.True;
+            table.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
             table.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             table.BackgroundColor = Color.White;
             table.BorderStyle = BorderStyle.None;
             table.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = SystemColors.Control;
-            dataGridViewCellStyle10.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle10.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = DataGridViewTriState.True;
-            table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle18.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.BackColor = SystemColors.Control;
+            dataGridViewCellStyle18.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle18.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle18.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = DataGridViewTriState.True;
+            table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
             table.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             table.ColumnHeadersVisible = false;
             table.Columns.AddRange(new DataGridViewColumn[] { Name_, See, Edit, Del });
-            dataGridViewCellStyle15.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = SystemColors.Window;
-            dataGridViewCellStyle15.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle15.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle15.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = DataGridViewTriState.True;
-            table.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle23.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = SystemColors.Window;
+            dataGridViewCellStyle23.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle23.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle23.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = DataGridViewTriState.True;
+            table.DefaultCellStyle = dataGridViewCellStyle23;
             table.Dock = DockStyle.Top;
             table.Location = new Point(0, 0);
             table.Name = "table";
             table.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             table.RowHeadersVisible = false;
             table.RowHeadersWidth = 70;
-            dataGridViewCellStyle16.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle16.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle16.WrapMode = DataGridViewTriState.True;
-            table.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle24.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle24.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle24.WrapMode = DataGridViewTriState.True;
+            table.RowsDefaultCellStyle = dataGridViewCellStyle24;
             table.RowTemplate.Height = 29;
             table.ShowCellToolTips = false;
             table.Size = new Size(991, 176);
@@ -115,9 +113,9 @@
             // Name_
             // 
             Name_.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle11.SelectionBackColor = Color.White;
-            dataGridViewCellStyle11.SelectionForeColor = Color.Black;
-            Name_.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle19.SelectionBackColor = Color.White;
+            dataGridViewCellStyle19.SelectionForeColor = Color.Black;
+            Name_.DefaultCellStyle = dataGridViewCellStyle19;
             Name_.FillWeight = 320F;
             Name_.HeaderText = "Название";
             Name_.MinimumWidth = 6;
@@ -127,11 +125,11 @@
             // See
             // 
             See.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = Color.LightYellow;
-            dataGridViewCellStyle12.SelectionBackColor = Color.LightYellow;
-            dataGridViewCellStyle12.SelectionForeColor = Color.Black;
-            See.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle20.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle20.BackColor = Color.LightYellow;
+            dataGridViewCellStyle20.SelectionBackColor = Color.LightYellow;
+            dataGridViewCellStyle20.SelectionForeColor = Color.Black;
+            See.DefaultCellStyle = dataGridViewCellStyle20;
             See.FillWeight = 80F;
             See.FlatStyle = FlatStyle.Popup;
             See.HeaderText = "Подробнее";
@@ -144,11 +142,11 @@
             // Edit
             // 
             Edit.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle13.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = Color.Lavender;
-            dataGridViewCellStyle13.SelectionBackColor = Color.Lavender;
-            dataGridViewCellStyle13.SelectionForeColor = Color.Black;
-            Edit.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle21.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.BackColor = Color.Lavender;
+            dataGridViewCellStyle21.SelectionBackColor = Color.Lavender;
+            dataGridViewCellStyle21.SelectionForeColor = Color.Black;
+            Edit.DefaultCellStyle = dataGridViewCellStyle21;
             Edit.FillWeight = 80F;
             Edit.FlatStyle = FlatStyle.Popup;
             Edit.HeaderText = "Редактировать";
@@ -161,11 +159,11 @@
             // Del
             // 
             Del.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle14.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle14.BackColor = Color.Plum;
-            dataGridViewCellStyle14.SelectionBackColor = Color.Plum;
-            dataGridViewCellStyle14.SelectionForeColor = Color.Black;
-            Del.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle22.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.BackColor = Color.Plum;
+            dataGridViewCellStyle22.SelectionBackColor = Color.Plum;
+            dataGridViewCellStyle22.SelectionForeColor = Color.Black;
+            Del.DefaultCellStyle = dataGridViewCellStyle22;
             Del.FillWeight = 70F;
             Del.FlatStyle = FlatStyle.Popup;
             Del.HeaderText = "Удалить";
@@ -180,11 +178,9 @@
             groupBox1.BackColor = Color.FromArgb(255, 253, 242);
             groupBox1.Controls.Add(numericUpDown1);
             groupBox1.Controls.Add(add);
-            groupBox1.Controls.Add(checkedListBox1);
             groupBox1.Controls.Add(comboBox1);
             groupBox1.Controls.Add(textBox1);
             groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label1);
             groupBox1.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
@@ -197,9 +193,9 @@
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new Point(689, 34);
+            numericUpDown1.Location = new Point(198, 161);
             numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(272, 27);
+            numericUpDown1.Size = new Size(147, 27);
             numericUpDown1.TabIndex = 11;
             // 
             // add
@@ -214,55 +210,36 @@
             add.UseVisualStyleBackColor = false;
             add.Click += add_Click;
             // 
-            // checkedListBox1
-            // 
-            checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Location = new Point(136, 115);
-            checkedListBox1.MultiColumn = true;
-            checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(334, 114);
-            checkedListBox1.TabIndex = 10;
-            // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(689, 115);
+            comboBox1.Location = new Point(198, 100);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(272, 27);
+            comboBox1.Size = new Size(501, 27);
             comboBox1.TabIndex = 9;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(136, 34);
+            textBox1.Location = new Point(198, 42);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(334, 27);
+            textBox1.Size = new Size(501, 27);
             textBox1.TabIndex = 6;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(507, 115);
+            label6.Location = new Point(6, 100);
             label6.Name = "label6";
             label6.Size = new Size(94, 19);
             label6.TabIndex = 5;
             label6.Text = "Должность:";
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(6, 115);
-            label5.Name = "label5";
-            label5.Size = new Size(87, 19);
-            label5.TabIndex = 4;
-            label5.Text = "Спектакли:";
-            // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(507, 42);
+            label3.Location = new Point(6, 169);
             label3.Name = "label3";
             label3.Size = new Size(144, 19);
             label3.TabIndex = 2;
@@ -330,11 +307,9 @@
         private GroupBox groupBox1;
         private NumericUpDown numericUpDown1;
         private Button add;
-        private CheckedListBox checkedListBox1;
         private ComboBox comboBox1;
         private TextBox textBox1;
         private Label label6;
-        private Label label5;
         private Label label3;
         private Label label1;
         private Button Close;

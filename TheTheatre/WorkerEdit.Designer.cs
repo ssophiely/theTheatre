@@ -31,12 +31,10 @@
             label1 = new Label();
             label2 = new Label();
             label4 = new Label();
-            label5 = new Label();
-            w_name = new Label();
             numericUpDown1 = new NumericUpDown();
             comboBox1 = new ComboBox();
-            checkedListBox1 = new CheckedListBox();
             Close = new Button();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
             // 
@@ -70,31 +68,11 @@
             label4.TabIndex = 6;
             label4.Text = "Стаж работы (лет):";
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(26, 182);
-            label5.Name = "label5";
-            label5.Size = new Size(101, 19);
-            label5.TabIndex = 8;
-            label5.Text = "Спектакли:";
-            // 
-            // w_name
-            // 
-            w_name.AutoSize = true;
-            w_name.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            w_name.Location = new Point(248, 30);
-            w_name.Name = "w_name";
-            w_name.Size = new Size(51, 19);
-            w_name.TabIndex = 9;
-            w_name.Text = "label1";
-            // 
             // numericUpDown1
             // 
             numericUpDown1.Location = new Point(248, 127);
             numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(409, 27);
+            numericUpDown1.Size = new Size(154, 27);
             numericUpDown1.TabIndex = 12;
             // 
             // comboBox1
@@ -105,39 +83,35 @@
             comboBox1.Size = new Size(409, 28);
             comboBox1.TabIndex = 13;
             // 
-            // checkedListBox1
-            // 
-            checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Location = new Point(248, 182);
-            checkedListBox1.MultiColumn = true;
-            checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(409, 158);
-            checkedListBox1.TabIndex = 14;
-            // 
             // Close
             // 
             Close.BackColor = Color.Black;
             Close.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Close.ForeColor = Color.White;
-            Close.Location = new Point(521, 354);
+            Close.Location = new Point(521, 181);
             Close.Name = "Close";
             Close.Size = new Size(136, 36);
             Close.TabIndex = 15;
             Close.Text = "Изменить";
             Close.UseVisualStyleBackColor = false;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(248, 28);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(409, 27);
+            textBox1.TabIndex = 16;
+            // 
             // WorkerEdit
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(669, 402);
+            ClientSize = new Size(669, 229);
+            Controls.Add(textBox1);
             Controls.Add(Close);
-            Controls.Add(checkedListBox1);
             Controls.Add(comboBox1);
             Controls.Add(numericUpDown1);
-            Controls.Add(w_name);
-            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -155,11 +129,9 @@
         private Label label1;
         private Label label2;
         private Label label4;
-        private Label label5;
-        private Label w_name;
         private NumericUpDown numericUpDown1;
         private ComboBox comboBox1;
-        private CheckedListBox checkedListBox1;
         private Button Close;
+        private TextBox textBox1;
     }
 }
