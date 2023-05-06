@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic.ApplicationServices;
 using Microsoft.VisualBasic.Devices;
+using TheTheatre.Models;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace TheTheatre;
@@ -19,13 +20,14 @@ public partial class ThetheatreContext : DbContext
 
     public virtual DbSet<Show> Shows { get; set; }
 
-    public virtual DbSet<TheatreWorker> Theatreworkers { get; set; }
+    public virtual DbSet<TheatreWorker> TheatreWorkers { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlite("Data Source=theTheatre.db");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<TheatreWorker>().HasKey(u => u.TheatreWorkerId);
         modelBuilder
             .Entity<Show>()
             .HasMany(c => c.TheatreWorkers)
@@ -46,11 +48,14 @@ public partial class ThetheatreContext : DbContext
                 j.ToTable("Roles");
             });
 
-        Position _artist = new Position { PositionId = 4, PosName = "Художник" };
-        Position _soundman = new Position { PositionId = 3, PosName = "Звукорежиссер" };
-        Position _actor = new Position { PositionId = 2, PosName = "Актер" };
+
         Position _director = new Position { PositionId = 1, PosName = "Режиссер-постановщик" };
+        Position _actor = new Position { PositionId = 2, PosName = "Актер" };
+        Position _soundman = new Position { PositionId = 3, PosName = "Звукорежиссер" };
+        Position _artist = new Position { PositionId = 4, PosName = "Художник" };
         modelBuilder.Entity<Position>().HasData(_artist, _soundman, _actor, _director);
+
+
     }
 }
 

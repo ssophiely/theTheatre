@@ -118,9 +118,9 @@
             label4.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label4.Location = new Point(26, 220);
             label4.Name = "label4";
-            label4.Size = new Size(130, 19);
+            label4.Size = new Size(157, 19);
             label4.TabIndex = 10;
-            label4.Text = "Актеры и роли:";
+            label4.Text = "Участники и роли:";
             // 
             // label6
             // 
@@ -172,7 +172,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(666, 33);
+            label8.Location = new Point(771, 33);
             label8.Name = "label8";
             label8.Size = new Size(51, 19);
             label8.TabIndex = 17;
@@ -182,7 +182,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(413, 33);
+            label9.Location = new Point(518, 33);
             label9.Name = "label9";
             label9.Size = new Size(224, 19);
             label9.TabIndex = 16;
@@ -192,7 +192,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(666, 75);
+            label10.Location = new Point(771, 75);
             label10.Name = "label10";
             label10.Size = new Size(60, 19);
             label10.TabIndex = 19;
@@ -202,7 +202,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.Location = new Point(413, 75);
+            label11.Location = new Point(518, 75);
             label11.Name = "label11";
             label11.Size = new Size(230, 19);
             label11.TabIndex = 18;

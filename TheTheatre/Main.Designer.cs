@@ -53,7 +53,7 @@
             People.Name = "People";
             People.Size = new Size(170, 82);
             People.TabIndex = 1;
-            People.Text = "Люди театра";
+            People.Text = "Работники театра";
             People.UseVisualStyleBackColor = false;
             People.Click += People_Click;
             // 

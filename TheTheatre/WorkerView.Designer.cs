@@ -115,7 +115,7 @@
             textBox1.Location = new Point(195, 169);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(462, 183);
+            textBox1.Size = new Size(679, 183);
             textBox1.TabIndex = 8;
             // 
             // Close
@@ -123,7 +123,7 @@
             Close.BackColor = Color.Black;
             Close.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Close.ForeColor = Color.White;
-            Close.Location = new Point(521, 358);
+            Close.Location = new Point(738, 358);
             Close.Name = "Close";
             Close.Size = new Size(136, 36);
             Close.TabIndex = 9;
@@ -136,7 +136,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(669, 402);
+            ClientSize = new Size(886, 402);
             Controls.Add(Close);
             Controls.Add(textBox1);
             Controls.Add(label5);

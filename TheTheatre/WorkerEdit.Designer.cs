@@ -30,12 +30,12 @@
         {
             label1 = new Label();
             label2 = new Label();
-            label4 = new Label();
-            numericUpDown1 = new NumericUpDown();
-            comboBox1 = new ComboBox();
-            Close = new Button();
-            textBox1 = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            label3 = new Label();
+            experience = new NumericUpDown();
+            position = new ComboBox();
+            Change = new Button();
+            fullname = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)experience).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -58,68 +58,72 @@
             label2.TabIndex = 4;
             label2.Text = "Должность:";
             // 
-            // label4
+            // label3
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(25, 130);
-            label4.Name = "label4";
-            label4.Size = new Size(157, 19);
-            label4.TabIndex = 6;
-            label4.Text = "Стаж работы (лет):";
+            label3.AutoSize = true;
+            label3.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(25, 130);
+            label3.Name = "label3";
+            label3.Size = new Size(157, 19);
+            label3.TabIndex = 6;
+            label3.Text = "Стаж работы (лет):";
             // 
-            // numericUpDown1
+            // experience
             // 
-            numericUpDown1.Location = new Point(248, 127);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(154, 27);
-            numericUpDown1.TabIndex = 12;
+            experience.Location = new Point(248, 127);
+            experience.Name = "experience";
+            experience.Size = new Size(154, 27);
+            experience.TabIndex = 12;
             // 
-            // comboBox1
+            // position
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(248, 76);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(409, 28);
-            comboBox1.TabIndex = 13;
+            position.DropDownStyle = ComboBoxStyle.DropDownList;
+            position.FormattingEnabled = true;
+            position.Items.AddRange(new object[] { "Режиссер-постановщик", "Актер", "Звукорежиссер", "Художник" });
+            position.Location = new Point(248, 76);
+            position.Name = "position";
+            position.Size = new Size(562, 28);
+            position.TabIndex = 13;
             // 
-            // Close
+            // Change
             // 
-            Close.BackColor = Color.Black;
-            Close.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Close.ForeColor = Color.White;
-            Close.Location = new Point(521, 181);
-            Close.Name = "Close";
-            Close.Size = new Size(136, 36);
-            Close.TabIndex = 15;
-            Close.Text = "Изменить";
-            Close.UseVisualStyleBackColor = false;
+            Change.BackColor = Color.Black;
+            Change.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            Change.ForeColor = Color.White;
+            Change.Location = new Point(674, 181);
+            Change.Name = "Change";
+            Change.Size = new Size(136, 36);
+            Change.TabIndex = 15;
+            Change.Text = "Изменить";
+            Change.UseVisualStyleBackColor = false;
+            Change.Click += Change_Click;
             // 
-            // textBox1
+            // fullname
             // 
-            textBox1.Location = new Point(248, 28);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(409, 27);
-            textBox1.TabIndex = 16;
+            fullname.Location = new Point(248, 28);
+            fullname.Name = "fullname";
+            fullname.Size = new Size(562, 27);
+            fullname.TabIndex = 16;
             // 
             // WorkerEdit
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(669, 229);
-            Controls.Add(textBox1);
-            Controls.Add(Close);
-            Controls.Add(comboBox1);
-            Controls.Add(numericUpDown1);
-            Controls.Add(label4);
+            ClientSize = new Size(828, 225);
+            Controls.Add(fullname);
+            Controls.Add(Change);
+            Controls.Add(position);
+            Controls.Add(experience);
+            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "WorkerEdit";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Изменение данных о сотруднике";
             Deactivate += WorkerEdit_Deactivate;
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            Load += WorkerEdit_Load;
+            ((System.ComponentModel.ISupportInitialize)experience).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -128,10 +132,10 @@
 
         private Label label1;
         private Label label2;
-        private Label label4;
-        private NumericUpDown numericUpDown1;
-        private ComboBox comboBox1;
-        private Button Close;
-        private TextBox textBox1;
+        private Label label3;
+        private NumericUpDown experience;
+        private ComboBox position;
+        private Button Change;
+        private TextBox fullname;
     }
 }

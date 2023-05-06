@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace TheTheatre;
+namespace TheTheatre.Models;
 
 public partial class TheatreWorker
 {
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int TheatreWorkerId { get; set; }
 
     public string? Fullname { get; set; }

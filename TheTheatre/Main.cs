@@ -29,15 +29,11 @@ namespace TheTheatre
         private void People_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new People() { ReturnForm = this }.Show();
+            new Workers() { ReturnForm = this }.Show();
         }
 
         private void Main_Load(object sender, EventArgs e)
         {
-            using (ThetheatreContext db = new ThetheatreContext())
-            {
-
-            }
         }
 
         private void Main_Shown(object sender, EventArgs e)

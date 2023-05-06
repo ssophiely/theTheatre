@@ -30,7 +30,6 @@ d:\Users\admin\Desktop\theTheatre\TheTheatre\obj\Debug\net6.0-windows\TheTheatre
 d:\Users\admin\Desktop\theTheatre\TheTheatre\obj\Debug\net6.0-windows\TheTheatre.Halls.LargeHall.resources
 d:\Users\admin\Desktop\theTheatre\TheTheatre\obj\Debug\net6.0-windows\TheTheatre.Halls.SmallHall.resources
 d:\Users\admin\Desktop\theTheatre\TheTheatre\obj\Debug\net6.0-windows\TheTheatre.Main.resources
-d:\Users\admin\Desktop\theTheatre\TheTheatre\obj\Debug\net6.0-windows\TheTheatre.People.resources
 d:\Users\admin\Desktop\theTheatre\TheTheatre\obj\Debug\net6.0-windows\TheTheatre.ShowEdit.resources
 d:\Users\admin\Desktop\theTheatre\TheTheatre\obj\Debug\net6.0-windows\TheTheatre.Shows.resources
 d:\Users\admin\Desktop\theTheatre\TheTheatre\obj\Debug\net6.0-windows\TheTheatre.ShowView.resources
@@ -98,3 +97,4 @@ d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\runtimes\w
 d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\runtimes\win-x64\native\e_sqlite3.dll
 d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\runtimes\win-x86\native\e_sqlite3.dll
 d:\Users\admin\Desktop\theTheatre\TheTheatre\obj\Debug\net6.0-windows\TheTheatre.Info.resources
+d:\Users\admin\Desktop\theTheatre\TheTheatre\obj\Debug\net6.0-windows\TheTheatre.Workers.resources
