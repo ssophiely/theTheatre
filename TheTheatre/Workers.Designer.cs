@@ -32,18 +32,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle17 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle18 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle12 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle13 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle14 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle15 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle16 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
             workers_t = new DataGridView();
             Name_ = new DataGridViewTextBoxColumn();
             Position = new DataGridViewTextBoxColumn();
+            ID = new DataGridViewTextBoxColumn();
             Experience = new DataGridViewTextBoxColumn();
             Edit = new DataGridViewButtonColumn();
             Del = new DataGridViewButtonColumn();
@@ -70,41 +72,42 @@
             workers_t.AllowUserToOrderColumns = true;
             workers_t.AllowUserToResizeColumns = false;
             workers_t.AllowUserToResizeRows = false;
-            dataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.WrapMode = DataGridViewTriState.True;
-            workers_t.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            workers_t.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             workers_t.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             workers_t.BackgroundColor = Color.White;
             workers_t.BorderStyle = BorderStyle.None;
             workers_t.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle11.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = SystemColors.Control;
-            dataGridViewCellStyle11.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            dataGridViewCellStyle11.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = DataGridViewTriState.True;
-            workers_t.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = Color.White;
+            dataGridViewCellStyle2.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            workers_t.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             workers_t.ColumnHeadersHeight = 35;
-            workers_t.Columns.AddRange(new DataGridViewColumn[] { Name_, Position, Experience, Edit, Del });
-            dataGridViewCellStyle17.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = SystemColors.Window;
-            dataGridViewCellStyle17.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle17.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle17.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = DataGridViewTriState.True;
-            workers_t.DefaultCellStyle = dataGridViewCellStyle17;
+            workers_t.Columns.AddRange(new DataGridViewColumn[] { Name_, Position, ID, Experience, Edit, Del });
+            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = Color.FromArgb(255, 253, 242);
+            dataGridViewCellStyle9.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle9.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
+            workers_t.DefaultCellStyle = dataGridViewCellStyle9;
             workers_t.Dock = DockStyle.Top;
+            workers_t.EnableHeadersVisualStyles = false;
             workers_t.Location = new Point(0, 0);
             workers_t.Name = "workers_t";
             workers_t.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             workers_t.RowHeadersVisible = false;
             workers_t.RowHeadersWidth = 70;
-            dataGridViewCellStyle18.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle18.WrapMode = DataGridViewTriState.True;
-            workers_t.RowsDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle10.WrapMode = DataGridViewTriState.True;
+            workers_t.RowsDefaultCellStyle = dataGridViewCellStyle10;
             workers_t.RowTemplate.Height = 29;
             workers_t.ShowCellToolTips = false;
             workers_t.Size = new Size(991, 176);
@@ -114,9 +117,10 @@
             // Name_
             // 
             Name_.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle12.SelectionBackColor = Color.White;
-            dataGridViewCellStyle12.SelectionForeColor = Color.Black;
-            Name_.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            Name_.DefaultCellStyle = dataGridViewCellStyle3;
             Name_.DividerWidth = 1;
             Name_.FillWeight = 320F;
             Name_.HeaderText = "Имя";
@@ -125,22 +129,35 @@
             // 
             // Position
             // 
-            dataGridViewCellStyle13.SelectionBackColor = Color.White;
-            dataGridViewCellStyle13.SelectionForeColor = Color.Black;
-            Position.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle4.BackColor = Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = Color.Black;
+            Position.DefaultCellStyle = dataGridViewCellStyle4;
             Position.DividerWidth = 1;
             Position.HeaderText = "Должность";
             Position.MinimumWidth = 6;
             Position.Name = "Position";
             Position.Width = 125;
             // 
+            // ID
+            // 
+            dataGridViewCellStyle5.Format = "N0";
+            dataGridViewCellStyle5.NullValue = null;
+            ID.DefaultCellStyle = dataGridViewCellStyle5;
+            ID.HeaderText = "ID";
+            ID.MinimumWidth = 6;
+            ID.Name = "ID";
+            ID.Visible = false;
+            ID.Width = 125;
+            // 
             // Experience
             // 
-            dataGridViewCellStyle14.Format = "N0";
-            dataGridViewCellStyle14.NullValue = null;
-            dataGridViewCellStyle14.SelectionBackColor = Color.White;
-            dataGridViewCellStyle14.SelectionForeColor = Color.Black;
-            Experience.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle6.BackColor = Color.White;
+            dataGridViewCellStyle6.Format = "N0";
+            dataGridViewCellStyle6.NullValue = null;
+            dataGridViewCellStyle6.SelectionBackColor = Color.White;
+            dataGridViewCellStyle6.SelectionForeColor = Color.Black;
+            Experience.DefaultCellStyle = dataGridViewCellStyle6;
             Experience.DividerWidth = 1;
             Experience.HeaderText = "Стаж";
             Experience.MinimumWidth = 6;
@@ -150,11 +167,11 @@
             // Edit
             // 
             Edit.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle15.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.BackColor = Color.Lavender;
-            dataGridViewCellStyle15.SelectionBackColor = Color.Lavender;
-            dataGridViewCellStyle15.SelectionForeColor = Color.Black;
-            Edit.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = Color.Lavender;
+            dataGridViewCellStyle7.SelectionBackColor = Color.Lavender;
+            dataGridViewCellStyle7.SelectionForeColor = Color.Black;
+            Edit.DefaultCellStyle = dataGridViewCellStyle7;
             Edit.DividerWidth = 1;
             Edit.FillWeight = 80F;
             Edit.FlatStyle = FlatStyle.Popup;
@@ -168,11 +185,11 @@
             // Del
             // 
             Del.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle16.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle16.BackColor = Color.Plum;
-            dataGridViewCellStyle16.SelectionBackColor = Color.Plum;
-            dataGridViewCellStyle16.SelectionForeColor = Color.Black;
-            Del.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = Color.Plum;
+            dataGridViewCellStyle8.SelectionBackColor = Color.Plum;
+            dataGridViewCellStyle8.SelectionForeColor = Color.Black;
+            Del.DefaultCellStyle = dataGridViewCellStyle8;
             Del.DividerWidth = 1;
             Del.FillWeight = 70F;
             Del.FlatStyle = FlatStyle.Popup;
@@ -333,6 +350,7 @@
         private Button button1;
         private DataGridViewTextBoxColumn Name_;
         private DataGridViewTextBoxColumn Position;
+        private DataGridViewTextBoxColumn ID;
         private DataGridViewTextBoxColumn Experience;
         private DataGridViewButtonColumn Edit;
         private DataGridViewButtonColumn Del;

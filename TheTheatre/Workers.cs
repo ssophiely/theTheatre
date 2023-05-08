@@ -16,7 +16,6 @@ namespace TheTheatre
     public partial class Workers : Form
     {
         public Form ReturnForm;
-        private ThetheatreContext db = new ThetheatreContext();
 
         public Workers()
         {
@@ -43,12 +42,14 @@ namespace TheTheatre
 
         public void Table_Update()
         {
-            db = new ThetheatreContext();
-            workers_t.Rows.Clear();
-            var workers = db.TheatreWorkers.Include(u => u.Position).ToList();
-            foreach (TheatreWorker w in workers)
+            using (ThetheatreContext db = new ThetheatreContext())
             {
-                workers_t.Rows.Add(w.Fullname, w.Position.PosName, w.Experience);
+                workers_t.Rows.Clear();
+                var workers = db.TheatreWorkers.Include(u => u.Position).ToList();
+                foreach (TheatreWorker w in workers)
+                {
+                    workers_t.Rows.Add(w.Fullname, w.Position.PosName, w.TheatreWorkerId, w.Experience);
+                }
             }
             if (workers_t.Rows.Count > 0)
             {
@@ -61,17 +62,21 @@ namespace TheTheatre
             var senderGrid = (DataGridView)sender;
 
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
-                e.ColumnIndex == 3)
-            {
-                new WorkerEdit(2) { ReturnForm = this }.Show();
-            }
-            else if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 e.ColumnIndex == 4)
             {
-                var worker = db.TheatreWorkers.Where(w => w.TheatreWorkerId == e.RowIndex + 1).First();
-                db.TheatreWorkers.Remove(worker);
-                db.SaveChanges();
-                Table_Update();
+                new WorkerEdit(Convert.ToInt32(workers_t[2, e.RowIndex].Value)) { ReturnForm = this }.Show();
+            }
+            else if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                e.ColumnIndex == 5)
+            {
+                using (ThetheatreContext db = new ThetheatreContext())
+                {
+                    var worker = db.TheatreWorkers.Where(w => w.TheatreWorkerId ==
+                    Convert.ToInt32(workers_t[2, e.RowIndex].Value)).First();
+                    db.TheatreWorkers.Remove(worker);
+                    db.SaveChanges();
+                    Table_Update();
+                }
             }
         }
 
@@ -92,8 +97,11 @@ namespace TheTheatre
             int experience = (int)workexp_nud.Value;
             int positionId = position_cb.SelectedIndex + 1;
 
-            db.TheatreWorkers.Add(new TheatreWorker { Fullname = fn, Experience = experience, PositionId = positionId });
-            db.SaveChanges();
+            using (ThetheatreContext db = new ThetheatreContext())
+            {
+                db.TheatreWorkers.Add(new TheatreWorker { Fullname = fn, Experience = experience, PositionId = positionId });
+                db.SaveChanges();
+            }
             Table_Update();
         }
 
