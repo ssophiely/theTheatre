@@ -98,6 +98,7 @@
             // 
             // description
             // 
+            description.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             description.Location = new Point(217, 124);
             description.Multiline = true;
             description.Name = "description";
@@ -107,6 +108,7 @@
             // 
             // roles
             // 
+            roles.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             roles.Location = new Point(217, 205);
             roles.Multiline = true;
             roles.Name = "roles";

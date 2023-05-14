@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label5 = new Label();
-            textBox1 = new TextBox();
+            roles = new TextBox();
             Close = new Button();
             label1 = new Label();
             w_name = new Label();
@@ -45,14 +45,15 @@
             label5.TabIndex = 7;
             label5.Text = "Спектакли и роли:";
             // 
-            // textBox1
+            // roles
             // 
-            textBox1.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(175, 101);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(699, 233);
-            textBox1.TabIndex = 8;
+            roles.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            roles.Location = new Point(175, 101);
+            roles.Multiline = true;
+            roles.Name = "roles";
+            roles.Size = new Size(699, 233);
+            roles.TabIndex = 8;
+            roles.TabStop = false;
             // 
             // Close
             // 
@@ -83,8 +84,9 @@
             w_name.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             w_name.Location = new Point(175, 29);
             w_name.Name = "w_name";
-            w_name.Size = new Size(0, 19);
+            w_name.Size = new Size(51, 19);
             w_name.TabIndex = 11;
+            w_name.Text = "label2";
             // 
             // WorkerView
             // 
@@ -95,19 +97,20 @@
             Controls.Add(w_name);
             Controls.Add(label1);
             Controls.Add(Close);
-            Controls.Add(textBox1);
+            Controls.Add(roles);
             Controls.Add(label5);
             Name = "WorkerView";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Информация о сотруднике театра";
             Deactivate += WorkerView_Deactivate;
+            Load += WorkerView_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
         private Label label5;
-        private TextBox textBox1;
+        private TextBox roles;
         private Button Close;
         private Label label1;
         private Label w_name;

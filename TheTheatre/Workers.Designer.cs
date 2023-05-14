@@ -34,22 +34,16 @@
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
             workers_t = new DataGridView();
-            Name_ = new DataGridViewTextBoxColumn();
-            Position = new DataGridViewTextBoxColumn();
-            ID = new DataGridViewTextBoxColumn();
-            Experience = new DataGridViewTextBoxColumn();
-            roles = new DataGridViewButtonColumn();
-            Edit = new DataGridViewButtonColumn();
-            Del = new DataGridViewButtonColumn();
             groupBox1 = new GroupBox();
             workexp_nud = new NumericUpDown();
             worker_add = new Button();
@@ -65,6 +59,13 @@
             find_tb = new TextBox();
             Find = new Button();
             Reset = new Button();
+            Name_ = new DataGridViewTextBoxColumn();
+            Position = new DataGridViewTextBoxColumn();
+            ID = new DataGridViewTextBoxColumn();
+            Experience = new DataGridViewTextBoxColumn();
+            roles = new DataGridViewButtonColumn();
+            Edit = new DataGridViewButtonColumn();
+            Del = new DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)workers_t).BeginInit();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)workexp_nud).BeginInit();
@@ -95,14 +96,14 @@
             workers_t.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             workers_t.ColumnHeadersHeight = 35;
             workers_t.Columns.AddRange(new DataGridViewColumn[] { Name_, Position, ID, Experience, roles, Edit, Del });
-            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = Color.FromArgb(255, 253, 242);
-            dataGridViewCellStyle9.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle9.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle9.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
-            workers_t.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = Color.FromArgb(255, 253, 242);
+            dataGridViewCellStyle10.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle10.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle10.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = DataGridViewTriState.True;
+            workers_t.DefaultCellStyle = dataGridViewCellStyle10;
             workers_t.Dock = DockStyle.Top;
             workers_t.EnableHeadersVisualStyles = false;
             workers_t.Location = new Point(0, 0);
@@ -110,114 +111,15 @@
             workers_t.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             workers_t.RowHeadersVisible = false;
             workers_t.RowHeadersWidth = 70;
-            dataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle10.WrapMode = DataGridViewTriState.True;
-            workers_t.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle11.WrapMode = DataGridViewTriState.True;
+            workers_t.RowsDefaultCellStyle = dataGridViewCellStyle11;
             workers_t.RowTemplate.Height = 29;
             workers_t.ShowCellToolTips = false;
             workers_t.Size = new Size(1119, 176);
             workers_t.TabIndex = 10;
             workers_t.CellContentClick += table_CellContentClick;
-            // 
-            // Name_
-            // 
-            Name_.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle3.BackColor = Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = Color.White;
-            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
-            Name_.DefaultCellStyle = dataGridViewCellStyle3;
-            Name_.DividerWidth = 1;
-            Name_.FillWeight = 340F;
-            Name_.HeaderText = "Имя";
-            Name_.MinimumWidth = 6;
-            Name_.Name = "Name_";
-            // 
-            // Position
-            // 
-            Position.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle4.BackColor = Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = Color.Black;
-            Position.DefaultCellStyle = dataGridViewCellStyle4;
-            Position.DividerWidth = 1;
-            Position.FillWeight = 170F;
-            Position.HeaderText = "Должность";
-            Position.MinimumWidth = 6;
-            Position.Name = "Position";
-            // 
-            // ID
-            // 
-            dataGridViewCellStyle5.Format = "N0";
-            dataGridViewCellStyle5.NullValue = null;
-            ID.DefaultCellStyle = dataGridViewCellStyle5;
-            ID.HeaderText = "ID";
-            ID.MinimumWidth = 6;
-            ID.Name = "ID";
-            ID.Visible = false;
-            ID.Width = 125;
-            // 
-            // Experience
-            // 
-            Experience.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle6.BackColor = Color.White;
-            dataGridViewCellStyle6.Format = "N0";
-            dataGridViewCellStyle6.NullValue = null;
-            dataGridViewCellStyle6.SelectionBackColor = Color.White;
-            dataGridViewCellStyle6.SelectionForeColor = Color.Black;
-            Experience.DefaultCellStyle = dataGridViewCellStyle6;
-            Experience.DividerWidth = 1;
-            Experience.FillWeight = 70F;
-            Experience.HeaderText = "Стаж";
-            Experience.MinimumWidth = 6;
-            Experience.Name = "Experience";
-            // 
-            // roles
-            // 
-            roles.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            roles.DividerWidth = 1;
-            roles.FillWeight = 80F;
-            roles.FlatStyle = FlatStyle.Popup;
-            roles.HeaderText = "";
-            roles.MinimumWidth = 6;
-            roles.Name = "roles";
-            roles.Text = "Роли";
-            roles.UseColumnTextForButtonValue = true;
-            // 
-            // Edit
-            // 
-            Edit.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = Color.Lavender;
-            dataGridViewCellStyle7.SelectionBackColor = Color.Lavender;
-            dataGridViewCellStyle7.SelectionForeColor = Color.Black;
-            Edit.DefaultCellStyle = dataGridViewCellStyle7;
-            Edit.DividerWidth = 1;
-            Edit.FlatStyle = FlatStyle.Popup;
-            Edit.HeaderText = "";
-            Edit.MinimumWidth = 6;
-            Edit.Name = "Edit";
-            Edit.Resizable = DataGridViewTriState.True;
-            Edit.Text = "Редактировать";
-            Edit.UseColumnTextForButtonValue = true;
-            // 
-            // Del
-            // 
-            Del.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = Color.Plum;
-            dataGridViewCellStyle8.SelectionBackColor = Color.Plum;
-            dataGridViewCellStyle8.SelectionForeColor = Color.Black;
-            Del.DefaultCellStyle = dataGridViewCellStyle8;
-            Del.DividerWidth = 1;
-            Del.FillWeight = 70F;
-            Del.FlatStyle = FlatStyle.Popup;
-            Del.HeaderText = "";
-            Del.MinimumWidth = 6;
-            Del.Name = "Del";
-            Del.Resizable = DataGridViewTriState.True;
-            Del.Text = "Удалить";
-            Del.UseColumnTextForButtonValue = true;
             // 
             // groupBox1
             // 
@@ -388,6 +290,111 @@
             Reset.Text = "Сбросить";
             Reset.UseVisualStyleBackColor = false;
             Reset.Click += Reset_Click;
+            // 
+            // Name_
+            // 
+            Name_.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle3.BackColor = Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = Color.Black;
+            Name_.DefaultCellStyle = dataGridViewCellStyle3;
+            Name_.DividerWidth = 1;
+            Name_.FillWeight = 340F;
+            Name_.HeaderText = "Имя";
+            Name_.MinimumWidth = 6;
+            Name_.Name = "Name_";
+            // 
+            // Position
+            // 
+            Position.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle4.BackColor = Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = Color.Black;
+            Position.DefaultCellStyle = dataGridViewCellStyle4;
+            Position.DividerWidth = 1;
+            Position.FillWeight = 170F;
+            Position.HeaderText = "Должность";
+            Position.MinimumWidth = 6;
+            Position.Name = "Position";
+            // 
+            // ID
+            // 
+            dataGridViewCellStyle5.Format = "N0";
+            dataGridViewCellStyle5.NullValue = null;
+            ID.DefaultCellStyle = dataGridViewCellStyle5;
+            ID.HeaderText = "ID";
+            ID.MinimumWidth = 6;
+            ID.Name = "ID";
+            ID.Visible = false;
+            ID.Width = 125;
+            // 
+            // Experience
+            // 
+            Experience.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle6.BackColor = Color.White;
+            dataGridViewCellStyle6.Format = "N0";
+            dataGridViewCellStyle6.NullValue = null;
+            dataGridViewCellStyle6.SelectionBackColor = Color.White;
+            dataGridViewCellStyle6.SelectionForeColor = Color.Black;
+            Experience.DefaultCellStyle = dataGridViewCellStyle6;
+            Experience.DividerWidth = 1;
+            Experience.FillWeight = 70F;
+            Experience.HeaderText = "Стаж";
+            Experience.MinimumWidth = 6;
+            Experience.Name = "Experience";
+            // 
+            // roles
+            // 
+            roles.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = Color.FromArgb(255, 253, 242);
+            dataGridViewCellStyle7.ForeColor = Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(255, 253, 242);
+            dataGridViewCellStyle7.SelectionForeColor = Color.Black;
+            roles.DefaultCellStyle = dataGridViewCellStyle7;
+            roles.DividerWidth = 1;
+            roles.FillWeight = 80F;
+            roles.FlatStyle = FlatStyle.Popup;
+            roles.HeaderText = "";
+            roles.MinimumWidth = 6;
+            roles.Name = "roles";
+            roles.Text = "Роли";
+            roles.UseColumnTextForButtonValue = true;
+            // 
+            // Edit
+            // 
+            Edit.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = Color.Lavender;
+            dataGridViewCellStyle8.SelectionBackColor = Color.Lavender;
+            dataGridViewCellStyle8.SelectionForeColor = Color.Black;
+            Edit.DefaultCellStyle = dataGridViewCellStyle8;
+            Edit.DividerWidth = 1;
+            Edit.FlatStyle = FlatStyle.Popup;
+            Edit.HeaderText = "";
+            Edit.MinimumWidth = 6;
+            Edit.Name = "Edit";
+            Edit.Resizable = DataGridViewTriState.True;
+            Edit.Text = "Редактировать";
+            Edit.UseColumnTextForButtonValue = true;
+            // 
+            // Del
+            // 
+            Del.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = Color.Plum;
+            dataGridViewCellStyle9.SelectionBackColor = Color.Plum;
+            dataGridViewCellStyle9.SelectionForeColor = Color.Black;
+            Del.DefaultCellStyle = dataGridViewCellStyle9;
+            Del.DividerWidth = 1;
+            Del.FillWeight = 70F;
+            Del.FlatStyle = FlatStyle.Popup;
+            Del.HeaderText = "";
+            Del.MinimumWidth = 6;
+            Del.Name = "Del";
+            Del.Resizable = DataGridViewTriState.True;
+            Del.Text = "Удалить";
+            Del.UseColumnTextForButtonValue = true;
             // 
             // Workers
             // 

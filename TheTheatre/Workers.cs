@@ -62,9 +62,14 @@ namespace TheTheatre
             var senderGrid = (DataGridView)sender;
 
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                e.ColumnIndex == 4)
+            {
+                new WorkerView(Convert.ToInt32(workers_t[2, e.RowIndex].Value)) { ReturnForm = this }.ShowDialog();
+            }
+            else if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 e.ColumnIndex == 5)
             {
-                new WorkerEdit(Convert.ToInt32(workers_t[2, e.RowIndex].Value)) { ReturnForm = this }.Show();
+                new WorkerEdit(Convert.ToInt32(workers_t[2, e.RowIndex].Value)) { ReturnForm = this }.ShowDialog();
             }
             else if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 e.ColumnIndex == 6)
