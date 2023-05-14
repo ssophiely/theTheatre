@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,23 +37,33 @@ namespace TheTheatre
 
         private void Shows_Load(object sender, EventArgs e)
         {
-            table.RowTemplate.MinimumHeight = 35;
-            table.Rows.Add("Спеееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееектакль");
-            table.Rows.Add("Спектакль");
-            table.Rows.Add("Спектакль");
-            table.Rows.Add("Спектакль");
-            table.Rows.Add("Спектакль");
-            table[0, 0].Selected = false;
-
+            shows_t.RowTemplate.MinimumHeight = 35;
+            Shows_Update();
             inshow_t.RowTemplate.MinimumHeight = 25;
             allworkers_t.RowTemplate.MinimumHeight = 25;
             Allworkers_Update();
+        }
 
+        public void Shows_Update()
+        {
+            using (TheTheatreContext db = new TheTheatreContext())
+            {
+                shows_t.Rows.Clear();
+                var shows = db.Shows.ToList();
+                foreach (Show sh in shows)
+                {
+                    shows_t.Rows.Add(sh.ShowName);
+                }
+            }
+            if (shows_t.Rows.Count > 0)
+            {
+                shows_t[0, 0].Selected = false;
+            }
         }
 
         public void Allworkers_Update()
         {
-            using (ThetheatreContext db = new ThetheatreContext())
+            using (TheTheatreContext db = new TheTheatreContext())
             {
                 allworkers_t.Rows.Clear();
                 var list = inshow_t.Rows.Cast<DataGridViewRow>().Select(r => Convert.ToInt32(r.Cells[2].Value)).ToList();
@@ -75,23 +86,28 @@ namespace TheTheatre
             Allworkers_Update();
         }
 
-        private void table_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void shows_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             var senderGrid = (DataGridView)sender;
-
-            if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+            using (TheTheatreContext db = new TheTheatreContext())
+            {
+                if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
                 e.ColumnIndex == 1)
-            {
-                new ShowView().Show();
-            }
-            else if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
-                e.ColumnIndex == 2)
-            {
-                new ShowEdit().Show();
-            }
-            else
-            {
-                // удалить
+                {
+                    new ShowView(shows_t[0, e.RowIndex].Value.ToString()).ShowDialog();
+                }
+                else if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
+                    e.ColumnIndex == 2)
+                {
+                    new ShowEdit(shows_t[0, e.RowIndex].Value.ToString()) { ReturnForm = this }.ShowDialog();
+                }
+                else
+                {
+                    Show show = db.Shows.Where(sh => sh.ShowName == shows_t[0, e.RowIndex].Value.ToString()).First();
+                    db.Shows.Remove(show);
+                    db.SaveChanges();
+                    Shows_Update();
+                }
             }
         }
 
@@ -117,6 +133,74 @@ namespace TheTheatre
                 inshow_t.Rows.RemoveAt(e.RowIndex);
             }
             Allworkers_Update();
+        }
+
+        private void add_Click(object sender, EventArgs e)
+        {
+            if (show_name.Text == "" || description_tb.Text == "" || hall_cb.Text == "" || (hour_nud.Value == 0 && minutes_nud.Value == 0)
+                || min_price.Value == 0 || max_price.Value == 0)
+            {
+                MessageBox.Show(
+                       "Заполните все поля",
+                       "Ошибка",
+                       MessageBoxButtons.OK,
+                       MessageBoxIcon.Exclamation,
+                       MessageBoxDefaultButton.Button1,
+                       MessageBoxOptions.DefaultDesktopOnly);
+                this.Activate();
+                return;
+            }
+            if (inshow_t.Rows.Count == 0)
+            {
+                MessageBox.Show(
+                       "Добавьте участников спектакля",
+                       "Ошибка",
+                       MessageBoxButtons.OK,
+                       MessageBoxIcon.Exclamation,
+                       MessageBoxDefaultButton.Button1,
+                       MessageBoxOptions.DefaultDesktopOnly);
+                this.Activate();
+                return;
+            }
+            string name = show_name.Text;
+            string description = description_tb.Text;
+            string hall = hall_cb.Text;
+            int hour = (int)hour_nud.Value;
+            int minutes = (int)minutes_nud.Value;
+            int minprice = (int)min_price.Value;
+            int maxprice = (int)max_price.Value;
+            Show show = new Show
+            {
+                ShowName = name,
+                Duration = hour + minutes / 60,
+                Minprice = minprice,
+                Maxprice = maxprice,
+                Hall = hall,
+                Description = description
+            };
+            using (TheTheatreContext db = new TheTheatreContext())
+            {
+                db.Shows.Add(show);
+                for (int i = 0; i < inshow_t.Rows.Count; i++)
+                {
+                    int id = Convert.ToInt32(inshow_t.Rows[i].Cells[2].Value);
+                    TheatreWorker worker = db.TheatreWorkers.Where(w => w.TheatreWorkerId == id).First();
+                    show.Roles.Add(new Role { TheatreWorker = worker, RoleName = inshow_t.Rows[i].Cells[1].Value.ToString() });
+                }
+                db.SaveChanges();
+            }
+            Shows_Update();
+
+            // Очистка
+            inshow_t.Rows.Clear();
+            Allworkers_Update();
+            show_name.Text = "";
+            description_tb.Text = "";
+            hall_cb.Text = "";
+            hour_nud.Value = 0;
+            minutes_nud.Value = 0;
+            min_price.Value = 0;
+            max_price.Value = 0;
         }
     }
 }

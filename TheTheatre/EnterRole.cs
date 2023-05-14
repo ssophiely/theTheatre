@@ -14,6 +14,7 @@ namespace TheTheatre
     public partial class EnterRole : Form
     {
         public Shows ReturnForm;
+        public ShowEdit ShEditForm;
         private int _id;
         private string _name;
 
@@ -38,7 +39,14 @@ namespace TheTheatre
                 return;
             }
             string roleName = role.Text;
-            ReturnForm.InShow_AddRow(_name, roleName, _id);
+            if (ReturnForm != null)
+            {
+                ReturnForm.InShow_AddRow(_name, roleName, _id);
+            }
+            else
+            {
+                ShEditForm.InShow_AddRow(_name, roleName, _id);
+            }
             Close();
         }
     }

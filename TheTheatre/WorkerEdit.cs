@@ -14,7 +14,7 @@ namespace TheTheatre
 {
     public partial class WorkerEdit : Form
     {
-        private ThetheatreContext db = new ThetheatreContext();
+        private TheTheatreContext db = new TheTheatreContext();
         private TheatreWorker _worker;
         public Workers ReturnForm;
         public WorkerEdit(int ID)

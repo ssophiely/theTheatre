@@ -8,9 +8,9 @@ using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace TheTheatre;
 
-public partial class ThetheatreContext : DbContext
+public partial class TheTheatreContext : DbContext
 {
-    public ThetheatreContext()
+    public TheTheatreContext()
     {
         //Database.EnsureDeleted();
         Database.EnsureCreated();

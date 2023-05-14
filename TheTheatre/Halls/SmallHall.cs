@@ -17,12 +17,12 @@ namespace TheTheatre.Halls
             InitializeComponent();
         }
 
-        private void SmallHall_Deactivate(object sender, EventArgs e)
+        private void Close_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void Close_Click(object sender, EventArgs e)
+        private void SmallHall_Deactivate(object sender, EventArgs e)
         {
             Close();
         }

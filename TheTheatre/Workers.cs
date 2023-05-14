@@ -42,7 +42,7 @@ namespace TheTheatre
 
         public void Table_Update()
         {
-            using (ThetheatreContext db = new ThetheatreContext())
+            using (TheTheatreContext db = new TheTheatreContext())
             {
                 workers_t.Rows.Clear();
                 var workers = db.TheatreWorkers.Include(u => u.Position).ToList();
@@ -62,14 +62,14 @@ namespace TheTheatre
             var senderGrid = (DataGridView)sender;
 
             if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
-                e.ColumnIndex == 4)
+                e.ColumnIndex == 5)
             {
                 new WorkerEdit(Convert.ToInt32(workers_t[2, e.RowIndex].Value)) { ReturnForm = this }.Show();
             }
             else if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn &&
-                e.ColumnIndex == 5)
+                e.ColumnIndex == 6)
             {
-                using (ThetheatreContext db = new ThetheatreContext())
+                using (TheTheatreContext db = new TheTheatreContext())
                 {
                     var worker = db.TheatreWorkers.Where(w => w.TheatreWorkerId ==
                     Convert.ToInt32(workers_t[2, e.RowIndex].Value)).First();
@@ -91,20 +91,86 @@ namespace TheTheatre
                        MessageBoxIcon.Exclamation,
                        MessageBoxDefaultButton.Button1,
                        MessageBoxOptions.DefaultDesktopOnly);
+                this.Activate();
                 return;
             }
             string fn = fullname_tb.Text;
             int experience = (int)workexp_nud.Value;
             int positionId = position_cb.SelectedIndex + 1;
 
-            using (ThetheatreContext db = new ThetheatreContext())
+            using (TheTheatreContext db = new TheTheatreContext())
             {
                 db.TheatreWorkers.Add(new TheatreWorker { Fullname = fn, Experience = experience, PositionId = positionId });
                 db.SaveChanges();
             }
             Table_Update();
+            position_cb.SelectedIndex = -1;
+            fullname_tb.Text = "";
+            workexp_nud.Value = 0;
         }
 
+        private void Reset_Click(object sender, EventArgs e)
+        {
+            Table_Update();
+        }
 
+        private void Filter_Click(object sender, EventArgs e)
+        {
+            string filter = filter_cb.Text;
+            if (filter == "")
+            {
+                MessageBox.Show(
+                       "Заполните поле",
+                       "Ошибка",
+                       MessageBoxButtons.OK,
+                       MessageBoxIcon.Exclamation,
+                       MessageBoxDefaultButton.Button1,
+                       MessageBoxOptions.DefaultDesktopOnly);
+                this.Activate();
+                return;
+            };
+            List<DataGridViewRow> list = new List<DataGridViewRow>();
+            for (int i = 0; i < workers_t.Rows.Count; i++)
+            {
+                if (workers_t.Rows[i].Cells[1].Value.ToString() == filter)
+                    list.Add(workers_t.Rows[i]);
+            }
+            workers_t.Rows.Clear();
+            foreach (DataGridViewRow row in list)
+            {
+                workers_t.Rows.Add(row);
+            }
+            filter_cb.SelectedIndex = -1;
+        }
+
+        private void Find_Click(object sender, EventArgs e)
+        {
+            string find = find_tb.Text;
+            if (find == "")
+            {
+                MessageBox.Show(
+                       "Заполните поле",
+                       "Ошибка",
+                       MessageBoxButtons.OK,
+                       MessageBoxIcon.Exclamation,
+                       MessageBoxDefaultButton.Button1,
+                       MessageBoxOptions.DefaultDesktopOnly);
+                this.Activate();
+                return;
+            };
+            List<DataGridViewRow> list = new List<DataGridViewRow>();
+            for (int i = 0; i < workers_t.Rows.Count; i++)
+            {
+                if (workers_t.Rows[i].Cells[0].Value.ToString().ToLower().Contains(find.ToLower())
+                    || workers_t.Rows[i].Cells[3].Value.ToString().Contains(find))
+                    list.Add(workers_t.Rows[i]);
+            }
+            workers_t.Rows.Clear();
+            foreach (DataGridViewRow row in list)
+            {
+                workers_t.Rows.Add(row);
+            }
+            find_tb.Text = "";
+        }
     }
 }
