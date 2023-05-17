@@ -53,6 +53,14 @@ namespace TheTheatre
                 db.SaveChanges();
             }
             ReturnForm.Table_Update();
+            MessageBox.Show(
+                     $"Данные о сотруднике {_worker.Fullname} отредактированы",
+                     "Информация",
+                     MessageBoxButtons.OK,
+                     MessageBoxIcon.Information,
+                     MessageBoxDefaultButton.Button1,
+                     MessageBoxOptions.DefaultDesktopOnly);
+            this.Activate();
             Close();
         }
     }

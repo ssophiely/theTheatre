@@ -59,6 +59,8 @@
             find_tb = new TextBox();
             Find = new Button();
             Reset = new Button();
+            filterl = new Label();
+            findl = new Label();
             Name_ = new DataGridViewTextBoxColumn();
             Position = new DataGridViewTextBoxColumn();
             ID = new DataGridViewTextBoxColumn();
@@ -151,7 +153,7 @@
             // 
             worker_add.BackColor = Color.FromArgb(253, 219, 109);
             worker_add.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            worker_add.Location = new Point(825, 177);
+            worker_add.Location = new Point(953, 182);
             worker_add.Name = "worker_add";
             worker_add.Size = new Size(136, 36);
             worker_add.TabIndex = 9;
@@ -215,7 +217,7 @@
             Close.BackColor = Color.Black;
             Close.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Close.ForeColor = Color.White;
-            Close.Location = new Point(971, 503);
+            Close.Location = new Point(965, 503);
             Close.Name = "Close";
             Close.Size = new Size(136, 36);
             Close.TabIndex = 3;
@@ -228,7 +230,7 @@
             button1.BackColor = Color.Gray;
             button1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(829, 503);
+            button1.Location = new Point(823, 503);
             button1.Name = "button1";
             button1.Size = new Size(136, 36);
             button1.TabIndex = 4;
@@ -242,7 +244,7 @@
             filter_cb.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             filter_cb.FormattingEnabled = true;
             filter_cb.Items.AddRange(new object[] { "Режиссер-постановщик", "Актер", "Звукорежиссер", "Художник" });
-            filter_cb.Location = new Point(18, 196);
+            filter_cb.Location = new Point(18, 190);
             filter_cb.Name = "filter_cb";
             filter_cb.Size = new Size(225, 27);
             filter_cb.TabIndex = 12;
@@ -251,7 +253,7 @@
             // 
             Filter.BackColor = Color.FromArgb(253, 219, 109);
             Filter.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Filter.Location = new Point(249, 190);
+            Filter.Location = new Point(249, 184);
             Filter.Name = "Filter";
             Filter.Size = new Size(136, 36);
             Filter.TabIndex = 12;
@@ -261,6 +263,7 @@
             // 
             // find_tb
             // 
+            find_tb.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             find_tb.Location = new Point(616, 196);
             find_tb.Name = "find_tb";
             find_tb.Size = new Size(349, 27);
@@ -291,6 +294,26 @@
             Reset.UseVisualStyleBackColor = false;
             Reset.Click += Reset_Click;
             // 
+            // filterl
+            // 
+            filterl.AutoSize = true;
+            filterl.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            filterl.ForeColor = Color.OliveDrab;
+            filterl.Location = new Point(19, 220);
+            filterl.Name = "filterl";
+            filterl.Size = new Size(0, 17);
+            filterl.TabIndex = 17;
+            // 
+            // findl
+            // 
+            findl.AutoSize = true;
+            findl.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            findl.ForeColor = Color.OliveDrab;
+            findl.Location = new Point(616, 226);
+            findl.Name = "findl";
+            findl.Size = new Size(0, 17);
+            findl.TabIndex = 18;
+            // 
             // Name_
             // 
             Name_.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -300,7 +323,7 @@
             Name_.DefaultCellStyle = dataGridViewCellStyle3;
             Name_.DividerWidth = 1;
             Name_.FillWeight = 340F;
-            Name_.HeaderText = "Имя";
+            Name_.HeaderText = "ФИО";
             Name_.MinimumWidth = 6;
             Name_.Name = "Name_";
             // 
@@ -402,6 +425,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1119, 551);
+            Controls.Add(findl);
+            Controls.Add(filterl);
             Controls.Add(Reset);
             Controls.Add(Find);
             Controls.Add(find_tb);
@@ -440,6 +465,8 @@
         private TextBox find_tb;
         private Button Find;
         private Button Reset;
+        private Label filterl;
+        private Label findl;
         private DataGridViewTextBoxColumn Name_;
         private DataGridViewTextBoxColumn Position;
         private DataGridViewTextBoxColumn ID;

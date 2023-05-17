@@ -51,6 +51,7 @@
             roles.Location = new Point(175, 101);
             roles.Multiline = true;
             roles.Name = "roles";
+            roles.ScrollBars = ScrollBars.Vertical;
             roles.Size = new Size(699, 233);
             roles.TabIndex = 8;
             roles.TabStop = false;

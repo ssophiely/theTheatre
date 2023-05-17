@@ -111,6 +111,7 @@
             descriptiont_tb.Location = new Point(239, 160);
             descriptiont_tb.Multiline = true;
             descriptiont_tb.Name = "descriptiont_tb";
+            descriptiont_tb.ScrollBars = ScrollBars.Vertical;
             descriptiont_tb.Size = new Size(877, 76);
             descriptiont_tb.TabIndex = 11;
             descriptiont_tb.TabStop = false;
@@ -209,6 +210,7 @@
             // 
             m_nud.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
             m_nud.Location = new Point(372, 61);
+            m_nud.Maximum = new decimal(new int[] { 59, 0, 0, 0 });
             m_nud.Name = "m_nud";
             m_nud.Size = new Size(75, 25);
             m_nud.TabIndex = 23;

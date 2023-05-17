@@ -102,6 +102,7 @@
             description.Location = new Point(217, 124);
             description.Multiline = true;
             description.Name = "description";
+            description.ScrollBars = ScrollBars.Vertical;
             description.Size = new Size(772, 59);
             description.TabIndex = 9;
             description.TabStop = false;
@@ -112,6 +113,7 @@
             roles.Location = new Point(217, 205);
             roles.Multiline = true;
             roles.Name = "roles";
+            roles.ScrollBars = ScrollBars.Vertical;
             roles.Size = new Size(772, 172);
             roles.TabIndex = 11;
             roles.TabStop = false;

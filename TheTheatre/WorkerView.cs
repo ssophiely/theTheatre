@@ -40,7 +40,7 @@ namespace TheTheatre
                 w_name.Text = worker.Fullname;
                 foreach (Role role in worker.Roles)
                 {
-                    roles.Text += $"{role.RoleName} - {role.ShowName}" + '\r' + '\n';
+                    roles.Text += $"роль {role.RoleName} в спектакле \"{role.ShowName}\"" + '\r' + '\n';
                 }
             }
         }

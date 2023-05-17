@@ -105,7 +105,7 @@
             Close.BackColor = Color.Black;
             Close.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Close.ForeColor = Color.White;
-            Close.Location = new Point(989, 630);
+            Close.Location = new Point(983, 630);
             Close.Name = "Close";
             Close.Size = new Size(136, 36);
             Close.TabIndex = 3;
@@ -118,7 +118,7 @@
             Back.BackColor = Color.Gray;
             Back.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Back.ForeColor = Color.White;
-            Back.Location = new Point(847, 630);
+            Back.Location = new Point(841, 630);
             Back.Name = "Back";
             Back.Size = new Size(136, 36);
             Back.TabIndex = 5;
@@ -568,7 +568,7 @@
             // 
             hour_nud.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
             hour_nud.Location = new Point(736, 30);
-            hour_nud.Maximum = new decimal(new int[] { 5, 0, 0, 0 });
+            hour_nud.Maximum = new decimal(new int[] { 50, 0, 0, 0 });
             hour_nud.Name = "hour_nud";
             hour_nud.Size = new Size(75, 25);
             hour_nud.TabIndex = 12;
@@ -601,6 +601,7 @@
             description_tb.Location = new Point(120, 73);
             description_tb.Multiline = true;
             description_tb.Name = "description_tb";
+            description_tb.ScrollBars = ScrollBars.Vertical;
             description_tb.Size = new Size(436, 77);
             description_tb.TabIndex = 8;
             // 

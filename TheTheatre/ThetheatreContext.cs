@@ -23,7 +23,13 @@ public partial class TheTheatreContext : DbContext
     public virtual DbSet<TheatreWorker> TheatreWorkers { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlite("Data Source=theTheatre.db");
+    {
+        //var appDataPath=Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        //var dbPath = Path.Combine(appDataPath, "TheTheatre", "theTheatre.db");
+        //optionsBuilder.UseSqlite($"Data Source={dbPath}");
+        optionsBuilder.UseSqlite($"Data Source=theTheatre.db");
+    }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -58,6 +64,3 @@ public partial class TheTheatreContext : DbContext
 
     }
 }
-
-
-//d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows

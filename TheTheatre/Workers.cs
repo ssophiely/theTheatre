@@ -81,6 +81,14 @@ namespace TheTheatre
                     db.TheatreWorkers.Remove(worker);
                     db.SaveChanges();
                     Table_Update();
+                    MessageBox.Show(
+                      $"Сотрудник {worker.Fullname} удален",
+                      "Информация",
+                      MessageBoxButtons.OK,
+                      MessageBoxIcon.Information,
+                      MessageBoxDefaultButton.Button1,
+                      MessageBoxOptions.DefaultDesktopOnly);
+                    this.Activate();
                 }
             }
         }
@@ -112,10 +120,22 @@ namespace TheTheatre
             position_cb.SelectedIndex = -1;
             fullname_tb.Text = "";
             workexp_nud.Value = 0;
+            MessageBox.Show(
+                       $"Создан новый сотрудник - {fn}",
+                       "Информация",
+                       MessageBoxButtons.OK,
+                       MessageBoxIcon.Information,
+                       MessageBoxDefaultButton.Button1,
+                       MessageBoxOptions.DefaultDesktopOnly);
+            this.Activate();
         }
 
         private void Reset_Click(object sender, EventArgs e)
         {
+            filter_cb.SelectedIndex = -1;
+            find_tb.Text = "";
+            findl.Text = "";
+            filterl.Text = "";
             Table_Update();
         }
 
@@ -145,7 +165,7 @@ namespace TheTheatre
             {
                 workers_t.Rows.Add(row);
             }
-            filter_cb.SelectedIndex = -1;
+            filterl.Text = $"Применен фильтр. Найдено совпадений: {workers_t.Rows.Count}";
         }
 
         private void Find_Click(object sender, EventArgs e)
@@ -175,7 +195,7 @@ namespace TheTheatre
             {
                 workers_t.Rows.Add(row);
             }
-            find_tb.Text = "";
+            findl.Text = $"Применен поиск. Найдено совпадений: {workers_t.Rows.Count}";
         }
     }
 }
