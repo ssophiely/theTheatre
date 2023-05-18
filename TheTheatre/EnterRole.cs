@@ -49,5 +49,10 @@ namespace TheTheatre
             }
             Close();
         }
+
+        private void EnterRole_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

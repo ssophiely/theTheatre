@@ -12,7 +12,6 @@ public partial class TheTheatreContext : DbContext
 {
     public TheTheatreContext()
     {
-        //Database.EnsureDeleted();
         Database.EnsureCreated();
     }
 

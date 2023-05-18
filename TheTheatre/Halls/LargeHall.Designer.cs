@@ -68,6 +68,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Большой зал";
             Deactivate += LargeHall_Deactivate;
+            Load += LargeHall_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }

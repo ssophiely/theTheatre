@@ -76,6 +76,7 @@
             Name = "EnterRole";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Роль";
+            Load += EnterRole_Load;
             ResumeLayout(false);
             PerformLayout();
         }

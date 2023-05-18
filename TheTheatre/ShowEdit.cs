@@ -68,6 +68,14 @@ namespace TheTheatre
                 }
             }
             ReturnForm.Shows_Update();
+            MessageBox.Show(
+                     $"Данные о спектакле \"{_name}\" изменены",
+                     "Информация",
+                     MessageBoxButtons.OK,
+                     MessageBoxIcon.Information,
+                     MessageBoxDefaultButton.Button1,
+                     MessageBoxOptions.DefaultDesktopOnly);
+            this.Activate();
             Close();
         }
 

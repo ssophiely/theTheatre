@@ -68,6 +68,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Малый зал";
             Deactivate += SmallHall_Deactivate;
+            Load += SmallHall_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }

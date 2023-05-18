@@ -121,7 +121,7 @@ namespace TheTheatre
             fullname_tb.Text = "";
             workexp_nud.Value = 0;
             MessageBox.Show(
-                       $"Создан новый сотрудник - {fn}",
+                       $"Сотрудник {fn} создан",
                        "Информация",
                        MessageBoxButtons.OK,
                        MessageBoxIcon.Information,

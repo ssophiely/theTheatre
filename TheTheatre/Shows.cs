@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using TheTheatre.Models;
 
 namespace TheTheatre
@@ -103,6 +104,14 @@ namespace TheTheatre
                 }
                 else
                 {
+                    MessageBox.Show(
+                     $"Спектакль \"{shows_t[0, e.RowIndex].Value}\" удален",
+                     "Информация",
+                     MessageBoxButtons.OK,
+                     MessageBoxIcon.Information,
+                     MessageBoxDefaultButton.Button1,
+                     MessageBoxOptions.DefaultDesktopOnly);
+                    this.Activate();
                     Show show = db.Shows.Where(sh => sh.ShowName == shows_t[0, e.RowIndex].Value.ToString()).First();
                     db.Shows.Remove(show);
                     db.SaveChanges();
@@ -190,6 +199,14 @@ namespace TheTheatre
                 db.SaveChanges();
             }
             Shows_Update();
+            MessageBox.Show(
+                     $"Спектакль \"{name}\" создан",
+                     "Информация",
+                     MessageBoxButtons.OK,
+                     MessageBoxIcon.Information,
+                     MessageBoxDefaultButton.Button1,
+                     MessageBoxOptions.DefaultDesktopOnly);
+            this.Activate();
 
             // Очистка
             inshow_t.Rows.Clear();
