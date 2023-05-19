@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheTheatre", "TheTheatre.csproj", "{9102CBA8-66B0-41C4-879B-4DE0D3FA0839}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Theatre", "..\Theatre\Theatre.vdproj", "{703F1DAE-28BB-4655-BBAD-55744D0CAEFD}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "theTheatreSetup", "..\theTheatreSetup\theTheatreSetup.vdproj", "{3A9FF4C5-71DC-4000-83EB-48347C9B1243}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{9102CBA8-66B0-41C4-879B-4DE0D3FA0839}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9102CBA8-66B0-41C4-879B-4DE0D3FA0839}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9102CBA8-66B0-41C4-879B-4DE0D3FA0839}.Release|Any CPU.Build.0 = Release|Any CPU
-		{703F1DAE-28BB-4655-BBAD-55744D0CAEFD}.Debug|Any CPU.ActiveCfg = Debug
-		{703F1DAE-28BB-4655-BBAD-55744D0CAEFD}.Release|Any CPU.ActiveCfg = Release
+		{3A9FF4C5-71DC-4000-83EB-48347C9B1243}.Debug|Any CPU.ActiveCfg = Debug
+		{3A9FF4C5-71DC-4000-83EB-48347C9B1243}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

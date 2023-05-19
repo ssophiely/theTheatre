@@ -23,10 +23,9 @@ public partial class TheTheatreContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        //var appDataPath=Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-        //var dbPath = Path.Combine(appDataPath, "TheTheatre", "theTheatre.db");
-        //optionsBuilder.UseSqlite($"Data Source={dbPath}");
-        optionsBuilder.UseSqlite($"Data Source=theTheatre.db");
+        var appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        var dbPath = Path.Combine(appDataPath, "TheTheatre", "theTheatre.db");
+        optionsBuilder.UseSqlite($"Data Source={dbPath}");
     }
 
 

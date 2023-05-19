@@ -46,10 +46,8 @@ d:\Users\admin\Desktop\theTheatre\TheTheatre\obj\Debug\net6.0-windows\TheTheatre
 d:\Users\admin\Desktop\theTheatre\TheTheatre\obj\Debug\net6.0-windows\TheTheatre.genruntimeconfig.cache
 d:\Users\admin\Desktop\theTheatre\TheTheatre\obj\Debug\net6.0-windows\ref\TheTheatre.dll
 d:\Users\admin\Desktop\theTheatre\TheTheatre\obj\Debug\net6.0-windows\TheTheatre.Properties.Resources.resources
-d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\Humanizer.dll
 d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
 d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
-d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
 d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
 d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
 d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
@@ -61,9 +59,6 @@ d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\Microsoft.
 d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
 d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
 d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
-d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\Mono.TextTemplating.dll
-d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\MySqlConnector.dll
-d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\Pomelo.EntityFrameworkCore.MySql.dll
 d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
 d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\System.Text.Json.dll
 d:\Users\admin\Desktop\theTheatre\TheTheatre\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
