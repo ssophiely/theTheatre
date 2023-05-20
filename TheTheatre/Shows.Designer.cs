@@ -102,6 +102,7 @@
             // 
             // Close
             // 
+            Close.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             Close.BackColor = Color.Black;
             Close.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Close.ForeColor = Color.White;
@@ -115,6 +116,7 @@
             // 
             // Back
             // 
+            Back.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             Back.BackColor = Color.Gray;
             Back.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Back.ForeColor = Color.White;
@@ -243,6 +245,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             groupBox1.BackColor = Color.FromArgb(248, 244, 255);
             groupBox1.Controls.Add(groupBox2);
             groupBox1.Controls.Add(max_price);
@@ -271,6 +274,7 @@
             // 
             // groupBox2
             // 
+            groupBox2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             groupBox2.Controls.Add(allworkers_t);
             groupBox2.Controls.Add(inshow_t);
             groupBox2.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point);
@@ -310,7 +314,7 @@
             allworkers_t.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4, dataGridViewButtonColumn1 });
             dataGridViewCellStyle14.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle14.BackColor = SystemColors.Window;
-            dataGridViewCellStyle14.Font = new Font("Times New Roman", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle14.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point);
             dataGridViewCellStyle14.ForeColor = SystemColors.ControlText;
             dataGridViewCellStyle14.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle14.SelectionForeColor = SystemColors.HighlightText;
@@ -395,6 +399,7 @@
             dataGridViewCellStyle16.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle16.WrapMode = DataGridViewTriState.True;
             inshow_t.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            inshow_t.Anchor = AnchorStyles.Right;
             inshow_t.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             inshow_t.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
             inshow_t.BackgroundColor = Color.White;
@@ -419,7 +424,7 @@
             dataGridViewCellStyle21.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle21.WrapMode = DataGridViewTriState.True;
             inshow_t.DefaultCellStyle = dataGridViewCellStyle21;
-            inshow_t.Location = new Point(579, 24);
+            inshow_t.Location = new Point(606, 22);
             inshow_t.Name = "inshow_t";
             inshow_t.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
             inshow_t.RowHeadersVisible = false;
@@ -431,7 +436,7 @@
             inshow_t.RowTemplate.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             inshow_t.RowTemplate.Height = 50;
             inshow_t.ShowCellToolTips = false;
-            inshow_t.Size = new Size(522, 177);
+            inshow_t.Size = new Size(489, 177);
             inshow_t.TabIndex = 21;
             inshow_t.CellContentClick += inshow_t_CellContentClick;
             // 
@@ -489,8 +494,9 @@
             // 
             // max_price
             // 
+            max_price.Anchor = AnchorStyles.Right;
             max_price.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            max_price.Location = new Point(1000, 74);
+            max_price.Location = new Point(1000, 76);
             max_price.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
             max_price.Name = "max_price";
             max_price.Size = new Size(107, 25);
@@ -498,8 +504,9 @@
             // 
             // min_price
             // 
+            min_price.Anchor = AnchorStyles.Right;
             min_price.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            min_price.Location = new Point(736, 74);
+            min_price.Location = new Point(764, 76);
             min_price.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
             min_price.Name = "min_price";
             min_price.Size = new Size(97, 25);
@@ -507,8 +514,9 @@
             // 
             // label9
             // 
+            label9.Anchor = AnchorStyles.Right;
             label9.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(891, 71);
+            label9.Location = new Point(891, 73);
             label9.Name = "label9";
             label9.Size = new Size(103, 40);
             label9.TabIndex = 17;
@@ -516,8 +524,9 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.Right;
             label3.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(585, 74);
+            label3.Location = new Point(634, 73);
             label3.Name = "label3";
             label3.Size = new Size(94, 37);
             label3.TabIndex = 16;
@@ -525,9 +534,10 @@
             // 
             // label8
             // 
+            label8.Anchor = AnchorStyles.Right;
             label8.AutoSize = true;
             label8.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(972, 40);
+            label8.Location = new Point(1000, 40);
             label8.Name = "label8";
             label8.Size = new Size(32, 17);
             label8.TabIndex = 15;
@@ -535,6 +545,7 @@
             // 
             // add
             // 
+            add.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             add.BackColor = Color.Violet;
             add.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             add.Location = new Point(971, 385);
@@ -547,8 +558,9 @@
             // 
             // minutes_nud
             // 
+            minutes_nud.Anchor = AnchorStyles.Right;
             minutes_nud.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            minutes_nud.Location = new Point(891, 30);
+            minutes_nud.Location = new Point(919, 34);
             minutes_nud.Maximum = new decimal(new int[] { 59, 0, 0, 0 });
             minutes_nud.Name = "minutes_nud";
             minutes_nud.Size = new Size(75, 25);
@@ -556,9 +568,10 @@
             // 
             // label7
             // 
+            label7.Anchor = AnchorStyles.Right;
             label7.AutoSize = true;
             label7.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(817, 38);
+            label7.Location = new Point(869, 40);
             label7.Name = "label7";
             label7.Size = new Size(16, 17);
             label7.TabIndex = 13;
@@ -566,8 +579,9 @@
             // 
             // hour_nud
             // 
+            hour_nud.Anchor = AnchorStyles.Right;
             hour_nud.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            hour_nud.Location = new Point(736, 30);
+            hour_nud.Location = new Point(788, 32);
             hour_nud.Maximum = new decimal(new int[] { 50, 0, 0, 0 });
             hour_nud.Name = "hour_nud";
             hour_nud.Size = new Size(75, 25);
@@ -575,9 +589,10 @@
             // 
             // label4
             // 
+            label4.Anchor = AnchorStyles.Right;
             label4.AutoSize = true;
             label4.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(585, 34);
+            label4.Location = new Point(634, 34);
             label4.Name = "label4";
             label4.Size = new Size(138, 17);
             label4.TabIndex = 11;
@@ -585,12 +600,13 @@
             // 
             // hall_cb
             // 
+            hall_cb.Anchor = AnchorStyles.Right;
             hall_cb.BackColor = Color.White;
             hall_cb.DropDownStyle = ComboBoxStyle.DropDownList;
             hall_cb.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
             hall_cb.FormattingEnabled = true;
             hall_cb.Items.AddRange(new object[] { "Малый", "Большой" });
-            hall_cb.Location = new Point(685, 127);
+            hall_cb.Location = new Point(685, 125);
             hall_cb.Name = "hall_cb";
             hall_cb.Size = new Size(422, 25);
             hall_cb.TabIndex = 9;
@@ -615,9 +631,10 @@
             // 
             // label6
             // 
+            label6.Anchor = AnchorStyles.Right;
             label6.AutoSize = true;
             label6.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(585, 124);
+            label6.Location = new Point(634, 125);
             label6.Name = "label6";
             label6.Size = new Size(33, 17);
             label6.TabIndex = 5;

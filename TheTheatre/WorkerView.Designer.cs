@@ -100,6 +100,10 @@
             Controls.Add(Close);
             Controls.Add(roles);
             Controls.Add(label5);
+            MaximizeBox = false;
+            MaximumSize = new Size(904, 435);
+            MinimizeBox = false;
+            MinimumSize = new Size(904, 435);
             Name = "WorkerView";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Информация о сотруднике театра";

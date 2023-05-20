@@ -39,7 +39,7 @@
             Close.BackColor = Color.Black;
             Close.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Close.ForeColor = Color.White;
-            Close.Location = new Point(512, 431);
+            Close.Location = new Point(617, 541);
             Close.Name = "Close";
             Close.Size = new Size(136, 36);
             Close.TabIndex = 19;
@@ -52,7 +52,7 @@
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(19, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(622, 413);
+            pictureBox1.Size = new Size(734, 520);
             pictureBox1.TabIndex = 20;
             pictureBox1.TabStop = false;
             // 
@@ -61,9 +61,13 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(660, 479);
+            ClientSize = new Size(759, 585);
             Controls.Add(pictureBox1);
             Controls.Add(Close);
+            MaximizeBox = false;
+            MaximumSize = new Size(777, 632);
+            MinimizeBox = false;
+            MinimumSize = new Size(777, 632);
             Name = "LargeHall";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Большой зал";

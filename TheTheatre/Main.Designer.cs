@@ -35,9 +35,10 @@
             // 
             // Shows
             // 
+            Shows.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             Shows.BackColor = Color.Violet;
             Shows.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            Shows.Location = new Point(239, 92);
+            Shows.Location = new Point(235, 92);
             Shows.Name = "Shows";
             Shows.Size = new Size(170, 82);
             Shows.TabIndex = 0;
@@ -47,9 +48,10 @@
             // 
             // People
             // 
+            People.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             People.BackColor = Color.FromArgb(253, 219, 109);
             People.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            People.Location = new Point(239, 186);
+            People.Location = new Point(235, 186);
             People.Name = "People";
             People.Size = new Size(170, 82);
             People.TabIndex = 1;
@@ -59,6 +61,7 @@
             // 
             // Close
             // 
+            Close.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             Close.BackColor = Color.Black;
             Close.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Close.ForeColor = Color.White;

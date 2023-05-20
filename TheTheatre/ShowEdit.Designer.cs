@@ -549,6 +549,10 @@
             Controls.Add(label5);
             Controls.Add(name_tb);
             Controls.Add(label1);
+            MaximizeBox = false;
+            MaximumSize = new Size(1155, 560);
+            MinimizeBox = false;
+            MinimumSize = new Size(1155, 560);
             Name = "ShowEdit";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Изменение данных о спектакле";

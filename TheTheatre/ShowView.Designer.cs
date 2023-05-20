@@ -236,6 +236,10 @@
             Controls.Add(label3);
             Controls.Add(sh_name);
             Controls.Add(label1);
+            MaximizeBox = false;
+            MaximumSize = new Size(1019, 517);
+            MinimizeBox = false;
+            MinimumSize = new Size(1019, 517);
             Name = "ShowView";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Информация о спектакле";

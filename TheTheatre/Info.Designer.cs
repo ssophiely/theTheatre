@@ -36,9 +36,10 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(172, 61);
+            label1.Location = new Point(172, 84);
             label1.Name = "label1";
             label1.Size = new Size(205, 22);
             label1.TabIndex = 0;
@@ -46,9 +47,10 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(122, 108);
+            label2.Location = new Point(122, 131);
             label2.Name = "label2";
             label2.Size = new Size(304, 22);
             label2.TabIndex = 1;
@@ -56,9 +58,10 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
             label3.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(228, 155);
+            label3.Location = new Point(228, 178);
             label3.Name = "label3";
             label3.Size = new Size(93, 22);
             label3.TabIndex = 2;
@@ -66,6 +69,7 @@
             // 
             // Close
             // 
+            Close.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             Close.BackColor = Color.Black;
             Close.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Close.ForeColor = Color.White;
@@ -87,6 +91,10 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            MaximizeBox = false;
+            MaximumSize = new Size(566, 332);
+            MinimizeBox = false;
+            MinimumSize = new Size(566, 332);
             Name = "Info";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Информация об авторе";

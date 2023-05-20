@@ -118,6 +118,10 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            MaximizeBox = false;
+            MaximumSize = new Size(846, 272);
+            MinimizeBox = false;
+            MinimumSize = new Size(846, 272);
             Name = "WorkerEdit";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Изменение данных о сотруднике";

@@ -35,6 +35,7 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Left;
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.Location = new Point(25, 41);
@@ -45,6 +46,7 @@
             // 
             // role
             // 
+            role.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             role.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
             role.Location = new Point(170, 37);
             role.Name = "role";
@@ -53,6 +55,7 @@
             // 
             // Enter_role
             // 
+            Enter_role.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             Enter_role.BackColor = Color.Black;
             Enter_role.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Enter_role.ForeColor = Color.White;
@@ -73,6 +76,10 @@
             Controls.Add(Enter_role);
             Controls.Add(role);
             Controls.Add(label1);
+            MaximizeBox = false;
+            MaximumSize = new Size(657, 183);
+            MinimizeBox = false;
+            MinimumSize = new Size(657, 183);
             Name = "EnterRole";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Роль";

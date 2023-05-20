@@ -20,7 +20,7 @@ namespace TheTheatre
         public WorkerEdit(int ID)
         {
             InitializeComponent();
-            _worker = db.TheatreWorkers.Include(w => w.Position).Where(w => w.TheatreWorkerId == ID).First(); 
+            _worker = db.TheatreWorkers.Include(w => w.Position).Where(w => w.TheatreWorkerId == ID).First();
         }
 
         private void WorkerEdit_Deactivate(object sender, EventArgs e)
