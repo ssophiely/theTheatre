@@ -418,6 +418,7 @@
             // 
             // findl
             // 
+            findl.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             findl.AutoSize = true;
             findl.Font = new Font("Times New Roman", 9F, FontStyle.Bold, GraphicsUnit.Point);
             findl.ForeColor = Color.OliveDrab;
